@@ -22,11 +22,11 @@
 
 ## 문제 풀이
 
-#42. [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) - [블로그 풀이 링크](https://blog.naver.com/gamgomyang/223439892381)
+#42. [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)<img src="https://img.shields.io/badge/-Python-blue?logo=python"> - [블로그 풀이 링크](https://blog.naver.com/gamgomyang/223439892381)
     
-#561. [Array Partition](https://leetcode.com/problems/array-partition/description/) - [블로그 풀이 링크](https://blog.naver.com/gamgomyang/223440019500)
+#561. [Array Partition](https://leetcode.com/problems/array-partition/description/)<img src="https://img.shields.io/badge/-Python-blue?logo=python"> - [블로그 풀이 링크](https://blog.naver.com/gamgomyang/223440019500)
      
-#2614. [Prime In Diagonal](https://leetcode.com/problems/prime-in-diagonal/description/) - [블로그 풀이 링크](https://blog.naver.com/gamgomyang/223499211433)
+#2614. [Prime In Diagonal](https://leetcode.com/problems/prime-in-diagonal/description/)<img src="https://img.shields.io/badge/-Python-blue?logo=python"> - [블로그 풀이 링크](https://blog.naver.com/gamgomyang/223499211433)
 
 
 
