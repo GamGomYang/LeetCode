@@ -23,13 +23,3 @@ public class Solution {
 
         return true;
     }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-
-        Solution solution = new Solution();
-        boolean result = solution.isPalindrome(input);
-        System.out.println(result);
-    }
-}
