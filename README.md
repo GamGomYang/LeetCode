@@ -20,14 +20,34 @@
 </table>
 
 
-## 문제 풀이
+<h1>LeetCode 문제 풀이</h1>
 
-#42. [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) - <img src="https://img.shields.io/badge/-Python-blue?logo=python">[블로그 풀이 링크](https://blog.naver.com/gamgomyang/223439892381)
-    
-#561. [Array Partition](https://leetcode.com/problems/array-partition/description/) - <img src="https://img.shields.io/badge/-Python-blue?logo=python">[블로그 풀이 링크](https://blog.naver.com/gamgomyang/223440019500)
-     
-#2614. [Prime In Diagonal](https://leetcode.com/problems/prime-in-diagonal/description/) - <img src="https://img.shields.io/badge/-Python-blue?logo=python">[블로그 풀이 링크](https://blog.naver.com/gamgomyang/223499211433)
-
+<table>
+  <tr>
+    <th>번호</th>
+    <th>제목</th>
+    <th>언어</th>
+    <th>풀이 링크</th>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td><a href="https://leetcode.com/problems/trapping-rain-water/description/">Trapping Rain Water</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python" /></td>
+    <td><a href="https://blog.naver.com/gamgomyang/223439892381">블로그 풀이 링크</a></td>
+  </tr>
+  <tr>
+    <td>561</td>
+    <td><a href="https://leetcode.com/problems/array-partition/description/">Array Partition</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python" /></td>
+    <td><a href="https://blog.naver.com/gamgomyang/223440019500">블로그 풀이 링크</a></td>
+  </tr>
+  <tr>
+    <td>2614</td>
+    <td><a href="https://leetcode.com/problems/prime-in-diagonal/description/">Prime In Diagonal</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python" /></td>
+    <td><a href="https://blog.naver.com/gamgomyang/223499211433">블로그 풀이 링크</a></td>
+  </tr>
+</table>
 
 
 
