@@ -20,7 +20,7 @@
 </table>
 
 
-<h1>LeetCode 문제 풀이</h1>
+<h1>문제 목록</h1>
 
 <table>
   <tr>
