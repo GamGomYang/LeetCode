@@ -52,6 +52,7 @@
     <td><a href="">Most Common Word</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
     <td><img src="https://leetcode.com/problems/most-common-word/description/"/></td>
+     <td><p> </p></td>
   </tr>
   <tr>
     <td>2614</td>
