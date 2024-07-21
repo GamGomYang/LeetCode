@@ -50,6 +50,7 @@
      <tr>
     <td>819</td>
     <td><a href="">Most Common Word</a></td>
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
     <td><img src="https://leetcode.com/problems/most-common-word/description/"/></td>
     <td></td>
   </tr>
