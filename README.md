@@ -29,6 +29,12 @@
     <th>언어</th>
     <th>풀이 링크</th>
   </tr>
+   <tr>
+    <td>15</td>
+    <td><a href="https://leetcode.com/problems/3sum/description/">3Sum</a></td>
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
+    <td><a href="https://blog.naver.com/gamgomyang/223520545753">블로그 풀이 링크</a></td>
+  </tr>
   <tr>
     <td>42</td>
     <td><a href="https://leetcode.com/problems/trapping-rain-water/description/">Trapping Rain Water</a></td>

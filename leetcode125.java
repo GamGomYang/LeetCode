@@ -23,7 +23,6 @@ public class leetcode125 {
 
         return true;
     }
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
