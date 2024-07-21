@@ -8,7 +8,7 @@ public String mostCommonWord(String p , String[] banned){
 
     Map<String, Integer> counts = new HashMap();
 
-    String[] words = p.replaceAll("[^a-zA-Z]", " ").toLowerCase().split(" ");
+    String[] words = p.replaceAll("[^a-zA-Z]", " ").toLowerCase().split("\\s+");
 
     for(String w: words){
         if(!ban.contains(w)){
