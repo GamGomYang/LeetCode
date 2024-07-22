@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Map;
 
 
-public class Solution{
+public class leetcode241{
 
 
     public boolean isAnagram(String s, String t){
