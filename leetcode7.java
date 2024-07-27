@@ -1,6 +1,6 @@
 
 
-public class Solution{
+public class leetcode7{
 
     public int reverse(int x){
 
