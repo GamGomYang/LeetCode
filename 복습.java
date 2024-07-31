@@ -51,13 +51,12 @@ public class 복습{
                     left++;
                     right--;}
 
-                    else if(sum<target){
+                    else (sum<target){
                         left++;
 
 
                     }
-                    else{
-                        right--;
+             
                     }
                     
                 }
