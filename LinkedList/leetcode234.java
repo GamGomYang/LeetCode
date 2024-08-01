@@ -1,3 +1,4 @@
+package LinkedList;
 /*  
   실패함
 
@@ -146,7 +147,7 @@ import java.util.Deque;
 
 
 
-public class Solution{
+public class leetcode234{
     public boolean isPalindrome(ListNode head){
 
         ListNode fastRunner =head;
