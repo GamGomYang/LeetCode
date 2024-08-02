@@ -1,58 +1,54 @@
-import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.LinkedList;
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        ListNode root = new ListNode(0);
+        root.next = head;
 
-public class Solution{
-
-    public List<Integer> findAnagrams(String s , String p ){
-
-        List<Integer> result = new ArrayList<>();
-        if(s.length()<p.length()){
-            return result;
+        if(head == null || head.next == null){
+            return head;
         }
 
-        HashMap<Character, Integer> p_count = new HashMap<>();
+        ListNode start = root.next;
+        ListNode end = start.next;
+        ListNode current = head;
+        int count =0;
 
-           for(char c : p.toCharArray()){
-            p_count.put(c, p_count.getOrDefault(c,0)+1);
-           }
-
-        HashMap<Character, Integer > s_count = new HashMap<>();
-
-
-        int p_length = p.length();
-        int s_length = s.length();
-
-
-        for(int i=0; i< s.length(); i++){
-
-            char c =s.charAt(i);
-            s_count.put(c,s_count.getOrDefault(c,0)+1);
-            
-
-            if(i>= p_length){
-                char removeChar = s.charAt(i - p_length);
-                if(s_count.get(removeChar)==1){
-                    s_count.remove(removeChar);
-                }
-
-
-                else{
-                    s_count.put(removeChar, s_count.get(removeChar)-1); }               }
-
-
-            
-
-            if(p_count.equals(s_count)){
-              result.add(i-p_length+1);
-
-            }}
-
-            return result;
+        while(current != null){
+            count++;
+            current = current.next;
 
 
         }
 
 
+        for(int i=1; i<count; i++ ){
+            ListNode temp = start.next;
+            start.next = end.next;
+            end.next = root.next;
+            root.next = end;
+            end = start.next;
+            
 
-    } 
+
+        }
+        
+
+        return root.next;
+        
+
+
+
+    }
+}

@@ -46,6 +46,53 @@ import java.util.Deque;
         return dummyHead.next;
         
     }
+
+
+    //temp를 이용한 풀이
+
+
+
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        ListNode root = new ListNode(0);
+        root.next = head;
+
+        if(head == null || head.next == null){
+            return head;
+        }
+
+        ListNode start = root.next;
+        ListNode end = start.next;
+        ListNode current = head;
+        int count =0;
+
+        while(current != null){
+            count++;
+            current = current.next;
+
+
+        }
+
+
+        for(int i=1; i<count; i++ ){
+            ListNode temp = start.next;
+            start.next = end.next;
+            end.next = root.next;
+            root.next = end;
+            end = start.next;
+            
+
+
+        }
+        
+
+        return root.next;
+        
+
+
+
+    }
+}
 }*/
 
 
