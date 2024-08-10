@@ -37,9 +37,6 @@ public class 복습{
                     if(sum == target){
                         result.add(Arrays.asList(nums[i],nums[j],nums[left],nums[right]));
 
-
-
-
                     
                     while(left<right && nums[left]==nums[left+1]){
                         left++;
