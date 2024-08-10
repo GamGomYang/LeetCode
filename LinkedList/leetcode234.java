@@ -174,7 +174,6 @@ public class leetcode234{
             slowRunner = next;
 
         }
-
         while(rev != null){
 
             if(rev.val != head.val){
