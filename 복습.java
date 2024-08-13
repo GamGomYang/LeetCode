@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 
-public class 복습{
+public class Solution{
     public List<List<Integer>> fourSum( int[] nums , int target){
 
         List<List<Integer>> result = new ArrayList<>();
