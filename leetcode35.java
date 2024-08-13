@@ -1,3 +1,7 @@
+import java.util.Scanner;
+import java.util.List;
+import java.util.Deque;
+
 class Solution {
     public int searchInsert(int[] nums, int target) {
         int left = 0;
