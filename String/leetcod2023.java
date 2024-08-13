@@ -1,8 +1,9 @@
+
 import java.util.*;
 import java.io.*;
 
 
-class Solution {
+class leetcod2023 {
     public int numOfPairs(String[] nums, String target) {
 
         if(nums.length == 1 ){

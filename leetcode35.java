@@ -5,8 +5,6 @@ class Solution {
 
         // sorted array -> index searching
         // if target number not existed in nums[i]
-        // so return 1
-        // solution ->  hashmap -> not correct
         // solution ->  sorted searching -> correct
 
 
