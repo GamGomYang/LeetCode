@@ -3,6 +3,11 @@ class Solution {
         int left = 0;
         int right = nums.length - 1;
 
+        // sorted array -> index searching
+        // if target number not existed in nums[i]
+        // so return 1
+        
+
         while (left <= right) {
             int mid = left + (right - left) / 2;
 
@@ -16,5 +21,7 @@ class Solution {
         }
 
         return left;
+
+
     }
 }
