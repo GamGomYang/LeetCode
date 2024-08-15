@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Solution{
+public class leetcode438{
 
     public List<Integer> findAnagrams(String s , String p ){
 
