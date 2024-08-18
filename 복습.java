@@ -14,20 +14,13 @@ public class 복습{
         String[] words = s.split(" ");
         //words = ["Hello", "world", "this", "is", "Java"];
 
-        int max =0;
+        int LastLength =0;
 
-        //word 는 words의 각 요소를 순차적으로 참조함.
-        for(String word : words){
+        int length = words.length -1;
 
-            if(!word.isEmpty()){
+        LastLength = words[length].length();
 
-                max = Math.max(max, word.length());
-
-
-            }
-        }
-
-        return max;
+        return LastLength;
 
 
 
