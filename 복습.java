@@ -1,49 +1,67 @@
-// 자바 디버깅 한번 해봐야겠음
-// input : today is a nice day 출력이 5가 아닌 3으로 나오는 이유를 살펴보자
-
-import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Deque;
+import java.util.Stack;
 
 
-public class 복습{
-
-    public int lengthOfLastWord(String s) {
+public class note{
 
 
-        String[] words = s.split(" ");
-        //words = ["Hello", "world", "this", "is", "Java"];
+public ListNode deleteDuplicates(ListNode head) {
 
-        int LastLength =0;
-
-        int length = words.length -1;
-
-        LastLength = words[length].length();
-
-        return LastLength;
+    Stack<Integer> stack = new Stack<>();
 
 
+    int n =0;
 
 
-        
+    int length = n.length();
+
+
+    if(n<length){
+
+
+        stack.push(n);
+
+
     }
 
-    public static void main(String[] args) {
-        Scanner scanner =new Scanner(System.in);
-
-        String s = scanner.nextLine();
-
-        복습 solution = new 복습();
-
-        int result = solution.lengthOfLastWord(s);
-
-        System.out.println(result);
 
 
+    int result = 0;
+
+    if(stack.isEmpty()){
+
+
+        return result;
     }
 
     
 
 
 
+
+        
 }
+
+
+
+public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+
+    int n=0;
+
+
+    n= sc.nextInt();
+
+
+    note solution = new note();
+
+
+
+}
+
+}
+
+
