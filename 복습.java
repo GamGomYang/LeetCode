@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+
+import java.util.Scanner;
+>>>>>>> f12e47406d73b09724d53bcddf51d7f180e1defb
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -41,6 +46,7 @@ public ListNode deleteDuplicates(ListNode head) {
 
 
 
+<<<<<<< HEAD
 
         
 }
@@ -65,3 +71,6 @@ public static void main(String[] args) {
 }
 
 
+=======
+}
+>>>>>>> f12e47406d73b09724d53bcddf51d7f180e1defb
