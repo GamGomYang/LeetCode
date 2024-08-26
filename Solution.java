@@ -15,10 +15,14 @@ public class Solution{
 
     int n =  sc.nextInt();
 
+    System.out.println("print String");
+
 
     String s = sc.nextLine();
 
+    System.out.println("solution.java")
 
-    
+
+
    }
 }
