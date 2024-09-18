@@ -53,6 +53,11 @@
     <td><a href="https://leetcode.com/problems/prime-in-diagonal/description/">Prime In Diagonal</a></td>
     <td><img src="https://img.shields.io/badge/-Python-blue?logo=python" /></td>
     <td><a href="https://blog.naver.com/gamgomyang/223499211433">블로그 풀이 링크</a></td>
+  </tr>  <tr>
+    <td>67</td>
+    <td><a href="https://leetcode.com/problems/add-binary/description/">Add Binary</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python" /></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode67.java">GitHub 풀이 링크</a></td>
   </tr>
 </table>
 
