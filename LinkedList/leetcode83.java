@@ -22,7 +22,7 @@ class ListNode{
 }// ListNode 정의
 
 
-class Solution {
+class leetcode83 {
    public ListNode deleteDuplicates(ListNode head) {
       if(head == null || head.next == null){
          return head;
