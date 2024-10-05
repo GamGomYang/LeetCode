@@ -27,7 +27,7 @@
     <td>10</td> 
     <td><a href="https://leetcode.com/problems/regularexpression-matching/">Regular Expression Matching</a></td> 
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
-    <td><a href="https://blog.naver.com/gamgomyang/223520545753">블로그 풀이 링크</a></td> 
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/DynamicProgramming/leetcode10.java">깃허브 풀이 링크</a></td> 
     <td>Hard</td> 
 </tr>
 
