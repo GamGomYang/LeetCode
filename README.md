@@ -22,7 +22,16 @@
 
 <h1>문제 목록</h1>
 
-<table> <tr> <th>번호</th> <th>제목</th> <th>언어</th> <th>풀이 링크</th> <th>난이도</th> </tr> <tr> <td>15</td> <td><a href="https://leetcode.com/problems/3sum/description/">3Sum</a></td> <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> <td><a href="https://blog.naver.com/gamgomyang/223520545753">블로그 풀이 링크</a></td> <td>Medium</td> </tr> <tr> <td>42</td> <td><a href="https://leetcode.com/problems/trapping-rain-water/description/">Trapping Rain Water</a></td> <td><img src="https://img.shields.io/badge/-Python-blue?logo=python" /></td> <td><a href="https://blog.naver.com/gamgomyang/223439892381">블로그 풀이 링크</a></td> <td>Hard</td> </tr> <tr> <td>67</td> <td><a href="https://leetcode.com/problems/add-binary/description/">Add Binary</a></td> <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode67.java">GitHub 풀이 링크</a></td> <td>Easy</td> </tr> <tr> <td>561</td> <td><a href="https://leetcode.com/problems/array-partition/description/">Array Partition</a></td> <td><img src="https://img.shields.io/badge/-Python-blue?logo=python" /></td> <td><a href="https://blog.naver.com/gamgomyang/223440019500">블로그 풀이 링크</a></td> <td>Easy</td> </tr> <tr> <td>2614</td> <td><a href="https://leetcode.com/problems/prime-in-diagonal/description/">Prime In Diagonal</a></td> <td><img src="https://img.shields.io/badge/-Python-blue?logo=python" /></td> <td><a href="https://blog.naver.com/gamgomyang/223499211433">블로그 풀이 링크</a></td> <td>Medium</td> </tr> </table>
+<table> <tr> <th>번호</th> <th>제목</th> <th>언어</th> <th>풀이 링크</th> <th>난이도</th> </tr> <tr> <td>15</td> <td><a href="https://leetcode.com/problems/3sum/description/">3Sum</a></td> <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> <td><a href="https://blog.naver.com/gamgomyang/223520545753">블로그 풀이 링크</a></td> <td>Medium</td> </tr>
+ <tr> 
+    <td>10</td> 
+    <td><a href="https://leetcode.com/problems/regularexpression-matching/">Regular Expression Matching</a></td> 
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
+    <td><a href="https://blog.naver.com/gamgomyang/223520545753">블로그 풀이 링크</a></td> 
+    <td>Hard</td> 
+</tr>
+
+ <tr> <td>42</td> <td><a href="https://leetcode.com/problems/trapping-rain-water/description/">Trapping Rain Water</a></td> <td><img src="https://img.shields.io/badge/-Python-blue?logo=python" /></td> <td><a href="https://blog.naver.com/gamgomyang/223439892381">블로그 풀이 링크</a></td> <td>Hard</td> </tr> <tr> <td>67</td> <td><a href="https://leetcode.com/problems/add-binary/description/">Add Binary</a></td> <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode67.java">GitHub 풀이 링크</a></td> <td>Easy</td> </tr> <tr> <td>561</td> <td><a href="https://leetcode.com/problems/array-partition/description/">Array Partition</a></td> <td><img src="https://img.shields.io/badge/-Python-blue?logo=python" /></td> <td><a href="https://blog.naver.com/gamgomyang/223440019500">블로그 풀이 링크</a></td> <td>Easy</td> </tr> <tr> <td>2614</td> <td><a href="https://leetcode.com/problems/prime-in-diagonal/description/">Prime In Diagonal</a></td> <td><img src="https://img.shields.io/badge/-Python-blue?logo=python" /></td> <td><a href="https://blog.naver.com/gamgomyang/223499211433">블로그 풀이 링크</a></td> <td>Medium</td> </tr> </table>
 
 
 
