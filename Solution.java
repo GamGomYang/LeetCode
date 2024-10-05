@@ -10,6 +10,7 @@ import java.io.*;
  * 2. . -> any charecter
  * 
  * ex: a*.* == aabb
+ * 
  */
 
 public class Solution{
@@ -18,9 +19,23 @@ public class Solution{
         int s_len = s.length();
         int p_len = p.length();
 
-        boolean dp[][] = new boolean[s_len-1][p_len-1];
+        boolean dp[][] = new boolean[s_len+1][p_len+1];
         dp[0][0]=true;
 
+        /*
+         * 1. *문자 처리
+         * '*'는 항상 2번째에 쓰인다. (a*, b*)
+         * '*'의 특징 
+         * 1.특정문자가 한번 이상 반복 사용되어진다.
+         * 2.특정문자가 아예 사용되어지지 않을 수 있다.
+         * 
+         * p = "a*"
+           p가 "a*"일 때, *는 a를 0번 반복할 수 있다.
+           j = 2일 때, p.charAt(1) == '*'이므로 dp[0][2] = dp[0][0]이 된다.
+           dp[0][0]은 빈 문자열과 빈 패턴이 매칭되므로 true이다.
+           따라서, "a*"는 빈 문자열과도 매칭되기 때문에 dp[0][2] = true이다.
+         * 
+         */
         for(int j=2 ; j<= p_len ; j++){
             if(p.charAt(j-1)=='*'){
                 dp[0][j] = dp[0][j-2];
@@ -45,5 +60,17 @@ public class Solution{
 
         return dp[s_len][p_len];
         
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String input_s = scanner.nextLine();
+        String intput_p = scanner.nextLine();
+
+        Solution solution = new Solution();
+        
+        boolean result = solution.isMatch(input_s, intput_p);
+        System.out.println(result);
     }
 }
