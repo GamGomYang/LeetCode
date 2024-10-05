@@ -12,13 +12,13 @@ import java.io.*;
  * ex: a*.* == aabb
  */
 
-public class Solution{
+public class leetcode10{
     public boolean isMatch(String s, String p){
 
         int s_len = s.length();
         int p_len = p.length();
 
-        boolean dp[][] = new boolean[s_len-1][p_len-1];
+        boolean dp[][] = new boolean[s_len+1][p_len+1];
         dp[0][0]=true;
 
         for(int j=2 ; j<= p_len ; j++){
