@@ -1,4 +1,85 @@
 import java.util.Scanner;
+import java.io.*;
+
+
+public class Soltuion{
+ public String intToroman(int x){
+	 String string = String.valueOf(x);
+	 string = string.toReverse();
+
+	 int length = string.length();
+
+	 Stringbuilder sb = new Stringbuilder;
+	 int num=0;
+
+	 for(int i=0 ; i< length ; i++){
+		 num = string.charAt(i).toInt();
+		 if(i==0&&(num!=0|num<4)){
+			 for(int j =0; j<num ;j++){
+				 sb.append("I");
+			 }
+	      else if(i==0&&num==4){
+			  sb.append("IV");
+		  }
+		  else if(i==0&&4<num<9){
+			  sb.append("V");
+			  int mod = num%5;
+			  for(int k=0;k<mod;k++){
+				  sb.append("I");
+			  }
+		  }
+		   if(i==1&&(num!=0|num<4)){
+			 for(int j =0; j<num ;j++){
+				 sb.append("X");
+			 }
+	      else if(i==1&&num==4){
+			  sb.append("XL");
+		  }
+		  else if(i==1&&4<num<9){
+			  sb.append("L");
+			  int mod = num%5;
+			  for(int k=0;k<mod;k++){
+				  sb.append("X");
+			  }
+		  }
+		  if(i==2&&(num!=0|num<4)){
+			 for(int j =0; j<num ;j++){
+				 sb.append("C");
+			 }
+	      else if(i==2&&num==4){
+			  sb.append("CD");
+		  }
+		  else if(i==2&&4<num<9){
+			  sb.append("D");
+			  int mod = num%5;
+			  for(int k=0;k<mod;k++){
+				  sb.append("C");
+			  }
+		  }
+		  if(i==3&&(num!=0|num<4)){
+		   for(int j =0; j<num ;j++){
+				 sb.append("M");
+			 }
+
+
+		 }
+
+		 return sb;
+
+	 
+	 }
+
+
+
+
+ 
+ }
+}
+
+
+
+
+/*import java.util.Scanner;
 import java.util.List;
 import java.util.Stack;
 import java.io.*;
@@ -12,7 +93,7 @@ import java.io.*;
  * ex: a*.* == aabb
  * 
  */
-
+ /*
 public class Solution{
     public boolean isMatch(String s, String p){
 
@@ -36,7 +117,7 @@ public class Solution{
            따라서, "a*"는 빈 문자열과도 매칭되기 때문에 dp[0][2] = true이다.
          * 
          */
-        for(int j=2 ; j<= p_len ; j++){
+    /*    for(int j=2 ; j<= p_len ; j++){
             if(p.charAt(j-1)=='*'){
                 dp[0][j] = dp[0][j-2];
                         }
@@ -74,3 +155,4 @@ public class Solution{
         System.out.println(result);
     }
 }
+*/
