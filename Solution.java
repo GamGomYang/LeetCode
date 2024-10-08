@@ -27,7 +27,11 @@ public class Soltuion{
 			  for(int k=0;k<mod;k++){
 				  sb.append("I");
 			  }
+		  }else if(num == 9){
+			  sb.append("IX");
 		  }
+
+
 		   if(i==1&&(num!=0|num<4)){
 			 for(int j =0; j<num ;j++){
 				 sb.append("X");
@@ -41,7 +45,11 @@ public class Soltuion{
 			  for(int k=0;k<mod;k++){
 				  sb.append("X");
 			  }
+		  }else if(num == 9){
+			  sb.append("XC");
 		  }
+
+
 		  if(i==2&&(num!=0|num<4)){
 			 for(int j =0; j<num ;j++){
 				 sb.append("C");
@@ -55,7 +63,11 @@ public class Soltuion{
 			  for(int k=0;k<mod;k++){
 				  sb.append("C");
 			  }
+		  }else if(num == 9){
+			  sb.append("CM");
 		  }
+
+
 		  if(i==3&&(num!=0|num<4)){
 		   for(int j =0; j<num ;j++){
 				 sb.append("M");
