@@ -17,94 +17,6 @@
   </tr> 
 </table>
 
-<h1>String</h1>
-
-<table> 
-<tr> 
-    <th>번호</th> 
-    <th>제목</th> 
-    <th>언어</th> 
-    <th>풀이 링크</th> 
-    <th>난이도</th> 
-</tr> 
-<tr> 
-    <td>3</td> 
-    <td><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">Longest Substring Without Repeating Characters</a></td> 
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
-    <td></td> 
-    <td>Medium</td> 
-</tr>
-<tr> 
-    <td>5</td> 
-    <td><a href="https://leetcode.com/problems/longest-palindromic-substring/">Longest Palindromic Substring</a></td> 
-    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td> 
-    <td></td> 
-    <td>Medium</td> 
-</tr>
-<tr> 
-    <td>9</td> 
-    <td><a href="https://leetcode.com/problems/palindrome-number/">Palindrome Number</a></td> 
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
-    <td></td> 
-    <td>Easy</td> 
-</tr>
-<tr> 
-    <td>12</td> 
-    <td><a href="https://leetcode.com/problems/integer-to-roman/">Integer to Roman</a></td> 
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
-    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode12.java">깃허브 풀이 링크</a></td> 
-    <td>Medium</td> 
-</tr>
-<tr> 
-    <td>15</td> 
-    <td><a href="https://leetcode.com/problems/3sum/">3Sum</a></td> 
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
-    <td><a href="https://blog.naver.com/gamgomyang/223520545753">블로그 풀이 링크</a></td> 
-    <td>Medium</td> 
-</tr>
-<tr> 
-    <td>49</td> 
-    <td><a href="https://leetcode.com/problems/group-anagrams/">Group Anagrams</a></td> 
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
-    <td></td> 
-    <td>Medium</td> 
-</tr>
-<tr> 
-    <td>58</td> 
-    <td><a href="https://leetcode.com/problems/length-of-last-word/">Length of Last Word</a></td> 
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
-    <td></td> 
-    <td>Easy</td> 
-</tr>
-<tr> 
-    <td>67</td> 
-    <td><a href="https://leetcode.com/problems/add-binary/">Add Binary</a></td> 
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
-    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode67.java">GitHub 풀이 링크</a></td> 
-    <td>Easy</td> 
-</tr>
-<tr> 
-    <td>438</td> 
-    <td><a href="https://leetcode.com/problems/find-all-anagrams-in-a-string/">Find All Anagrams in a String</a></td> 
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
-    <td></td> 
-    <td>Medium</td> 
-</tr>
-<tr> 
-    <td>819</td> 
-    <td><a href="https://leetcode.com/problems/most-common-word/">Most Common Word</a></td> 
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
-    <td></td> 
-    <td>Easy</td> 
-</tr>
-<tr> 
-    <td>937</td> 
-    <td><a href="https://leetcode.com/problems/reorder-data-in-log-files/">Reorder Data in Log Files</a></td> 
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
-    <td></td> 
-    <td>Easy</td> 
-</tr>
-</table>
 
 
 <h1>문제 목록</h1>
@@ -223,3 +135,94 @@
     <td>Medium</td> 
 </tr>
 </table>
+
+
+<h1>String</h1>
+
+<table> 
+<tr> 
+    <th>번호</th> 
+    <th>제목</th> 
+    <th>언어</th> 
+    <th>풀이 링크</th> 
+    <th>난이도</th> 
+</tr> 
+<tr> 
+    <td>3</td> 
+    <td><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">Longest Substring Without Repeating Characters</a></td> 
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
+    <td></td> 
+    <td>Medium</td> 
+</tr>
+<tr> 
+    <td>5</td> 
+    <td><a href="https://leetcode.com/problems/longest-palindromic-substring/">Longest Palindromic Substring</a></td> 
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td> 
+    <td></td> 
+    <td>Medium</td> 
+</tr>
+<tr> 
+    <td>9</td> 
+    <td><a href="https://leetcode.com/problems/palindrome-number/">Palindrome Number</a></td> 
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
+    <td></td> 
+    <td>Easy</td> 
+</tr>
+<tr> 
+    <td>12</td> 
+    <td><a href="https://leetcode.com/problems/integer-to-roman/">Integer to Roman</a></td> 
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode12.java">깃허브 풀이 링크</a></td> 
+    <td>Medium</td> 
+</tr>
+<tr> 
+    <td>15</td> 
+    <td><a href="https://leetcode.com/problems/3sum/">3Sum</a></td> 
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
+    <td><a href="https://blog.naver.com/gamgomyang/223520545753">블로그 풀이 링크</a></td> 
+    <td>Medium</td> 
+</tr>
+<tr> 
+    <td>49</td> 
+    <td><a href="https://leetcode.com/problems/group-anagrams/">Group Anagrams</a></td> 
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
+    <td></td> 
+    <td>Medium</td> 
+</tr>
+<tr> 
+    <td>58</td> 
+    <td><a href="https://leetcode.com/problems/length-of-last-word/">Length of Last Word</a></td> 
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
+    <td></td> 
+    <td>Easy</td> 
+</tr>
+<tr> 
+    <td>67</td> 
+    <td><a href="https://leetcode.com/problems/add-binary/">Add Binary</a></td> 
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode67.java">GitHub 풀이 링크</a></td> 
+    <td>Easy</td> 
+</tr>
+<tr> 
+    <td>438</td> 
+    <td><a href="https://leetcode.com/problems/find-all-anagrams-in-a-string/">Find All Anagrams in a String</a></td> 
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
+    <td></td> 
+    <td>Medium</td> 
+</tr>
+<tr> 
+    <td>819</td> 
+    <td><a href="https://leetcode.com/problems/most-common-word/">Most Common Word</a></td> 
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
+    <td></td> 
+    <td>Easy</td> 
+</tr>
+<tr> 
+    <td>937</td> 
+    <td><a href="https://leetcode.com/problems/reorder-data-in-log-files/">Reorder Data in Log Files</a></td> 
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td> 
+    <td></td> 
+    <td>Easy</td> 
+</tr>
+</table>
+
