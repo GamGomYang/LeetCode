@@ -17,7 +17,7 @@
   </tr> 
 </table>
 
-<h1>문제 목록 (String 주제)</h1>
+<h1>String</h1>
 
 <table> 
 <tr> 
