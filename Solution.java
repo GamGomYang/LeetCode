@@ -1,7 +1,139 @@
 
 
 
+import java.util.Scanner;
+import java.util.List;
+import java.io.*;
 
+public class Solution {
+
+	public String intToRoman(int x) {
+		String string = String.valueOf(x);
+
+		StringBuilder sb = new StringBuilder();
+
+		int length = string.length();
+		int i = 0;
+		int num = 0;
+		String result;
+		int mod = 0;
+		StringBuilder Rev_String = new StringBuilder();
+
+		Rev_String.append(string);
+		Rev_String.reverse();
+		string = Rev_String.toString();
+
+		{
+			while (i < length) {
+				num = Character.getNumericValue(string.charAt(i));
+
+				if (i == 3 && 0 < num && num < 4) {
+					for (int j = 0; j < num; j++) {
+						sb.append("M");
+					}
+				}
+				if (i == 2 && 0 < num && num < 4) {
+					for (int j = 0; j < num; j++) {
+						sb.append("C");
+					}
+				} else if (i == 2 && num == 4) {
+					{
+						sb.append("DC");
+					}
+				} else if (i == 2 && num == 5) {
+					{
+						sb.append("D");
+					}
+				} else if (i == 2 && num > 5 && num < 9) {
+					{
+						mod = num % 5;
+						for (int k = 0; k < mod; k++) {
+							sb.append("C");
+						}
+						sb.append("D");
+						
+
+					}
+				} else if (i == 2 && num == 9) {
+					sb.append("MC");
+				}
+
+				if (i == 1 && 0 < num && num < 4) {
+					for (int j = 0; j < num; j++) {
+						sb.append("X");
+					}
+				} else if (i == 1 && num == 4) {
+					{
+						sb.append("LX");
+					}
+				} else if (i == 1 && num == 5) {
+					{
+						sb.append("L");
+					}
+				} else if (i == 1 && num > 5 && num < 9) {
+					{
+						mod = num % 5;
+						for (int k = 0; k < mod; k++) {
+							sb.append("X");
+						}
+						sb.append("L");
+
+					}
+				} else if (i == 1 && num == 9) {
+					sb.append("CX");
+				}
+
+				if (i == 0 && 0 < num && num < 4) {
+					for (int j = 0; j < num; j++) {
+						sb.append("I");
+					}
+				} else if (i == 0 && num == 4) {
+					{
+						sb.append("VI");
+					}
+				} else if (i == 0 && num == 5) {
+					{
+						sb.append("V");
+					}
+				} else if (i == 0 && num > 5 && num < 9) {
+					{
+
+						mod = num % 5;
+						for (int k = 0; k < mod; k++) {
+							sb.append("I");
+						}
+						sb.append("V");
+
+					}
+				} else if (i == 0 && num == 9) {
+					sb.append("XI");
+				}
+
+				i++;
+			}
+
+		}
+
+		result = sb.reverse().toString();
+
+		return result;
+
+	}
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		int input = scanner.nextInt();
+		String result;
+
+		Solution solution = new Solution();
+
+		result = solution.intToRoman(input);
+
+		System.out.println(result);
+	}
+}
 /*import java.util.Scanner;
 import java.util.List;
 import java.util.Stack;
