@@ -1,5 +1,63 @@
+import java.util.Scanner;
+import java.util.List;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Stack;
+import java.io.*;
+
+public class Solution{
+	public int threeSumClosest(int[] nums , int target){
+		int length = nums.length;
+		int left;
+		int right;
+		int sum_closet = nums[0]+nums[1]+nums[2];
+		Arrays.sort(nums);
+
+		for(int i=0; i<length-2; i++){
+			left = i+1;
+			right = length-2;
+			int sum;
+
+			while(right> left){
+			sum = nums[i]+nums[left]+nums[right];
+
+			if(sum_closet>sum){
+				sum_closet = sum;
+			}
+			if(sum < target){
+				left++;
+			}
+			else if(sum>target){
+				right--;
+			}
+			else{
+				return sum;
+			}
+			}
+		}
+		return sum_closet;
+	}
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int[] input;
+		int length = scanner.nextInt();
+
+		for(int i=0; i<length ; i++){
+		  input[i] = scanner.nextInt(); 
+		}
+		int target = scanner.nextInt();
+		Solution solution = new Solution();
+		int result =0;
+		result = solution.threeSumClosest(input,target);
+		System.out.println(result);
+
+	}
+}
 
 
+
+
+/* 
 
 import java.util.Scanner;
 import java.util.List;
@@ -134,7 +192,7 @@ public class Solution {
 		System.out.println(result);
 	}
 }
-/*import java.util.Scanner;
+import java.util.Scanner;
 import java.util.List;
 import java.util.Stack;
 import java.io.*;
