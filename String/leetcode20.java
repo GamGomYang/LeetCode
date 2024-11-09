@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Stack;
 
 
-public class Solution{
+public class leetcode20{
     public boolean isValid(String s){
         int length = s.length();
         Stack<Character> stack = new Stack();
@@ -41,7 +41,7 @@ public class Solution{
 
         String s = scanner.nextLine();
 
-        Solution solution = new Solution();
+        leetcode20 solution = new leetcode20();
 
         boolean total_result = solution.isValid(s);
 
