@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-class Solution {
+class leetcode22 {
     public List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList();
 
@@ -39,7 +39,7 @@ class Solution {
 
         int input = scanner.nextInt();
 
-        Solution solution = new Solution();
+        leetcode22 solution = new leetcode22();
 
         List<String> TotalList = solution.generateParenthesis(input);
 
