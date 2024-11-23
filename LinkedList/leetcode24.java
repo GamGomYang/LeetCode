@@ -11,8 +11,8 @@ import java.util.List;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
- 
-
+ /* 
+//solution 1: swap to repeat 
 public class leetcode24{
 
     public ListNode swapPairs(ListNode head){
@@ -36,4 +36,24 @@ public class leetcode24{
 
         return root.next;
  }
+}
+*/
+//solution2 : recursive swap
+
+
+public class leetcode24{
+
+    public ListNode swapPairs(ListNode head){
+    
+        if(head != null && head.next != null){
+
+            ListNode p = head.next;
+
+            head.next = swapPairs(head.next.next);
+            p.next = head;}
+
+            return head;
+    
+    
+    }
 }
