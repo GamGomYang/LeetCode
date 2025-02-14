@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.math.BigInteger;
 
 class Solution {
@@ -51,3 +52,6 @@ class Solution {
         return prev; // 리스트의 첫 노드 반환
     }
 }
+=======
+
+>>>>>>> d55ec8d9378a5c5320247cc991720984802a45b2
