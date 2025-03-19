@@ -5,8 +5,6 @@ class Solution:
 
         res =[]
 
-
-
         for i in range(len(intervals)):
         # 1. newInterval 이 intervals의 범위에 속하지 않는 경우 
             
