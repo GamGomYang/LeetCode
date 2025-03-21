@@ -1,28 +1,64 @@
 import java.util.Scanner;
-import java.util.List;
-
-public class Solution{
-    public int[] productExceptSelf(int[] nums) {
-     
-        int length = nums.length;
-        int right=1;
-        int left =1;
-        int result[] = new int[length];
+import java.util.Arrays;
 
 
-     for(int i=0 ; i<length ; i++){
+    public class leetcode238{
+        public int[] productExceptSelf(int[] nums) {
 
-        result[i] = left;
-        left *= nums[i];
-     }
+         int length = nums.length;
 
-     for(int i=length-1; i>=0 ; i--){
-        result[i] *= right;
-        right *= nums[i];
-     }
+         int right =1;
+         int left =1;
+
+         int result[] = new int[length];
 
 
-      return result;
+         for(int i =0 ; i<length ; i++){
+
+            result[i] = left;
+
+            left *= nums[i];
+
+         }
+
+         for(int i=length-1; i>=0 ; i--){
+
+            result[i] *= right;
+
+            right *= nums[i];
+
+         }
+         return result;
+
+        }
+
+
+        public static void main(String[] args) {
+            
+
+            Scanner scanner = new Scanner(System.in);
+
+            int size = 0;
+
+            System.out.println("size");
+
+            size = scanner.nextInt();
+
+           int input[] = new int [size];
+
+
+           for(int i=0 ; i< size ; i++){
+            System.out.println("input");
+
+            input[i] = scanner.nextInt();
+           }
+
+           Solution solution = new Solution();
+
+           int[] total = solution.productExceptSelf(input);
+
+          System.out.println(Arrays.toString(total));
+
+        }
+
     }
-
-}
