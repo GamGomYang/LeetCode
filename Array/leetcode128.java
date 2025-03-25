@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-class Solution {
+class leetcode128 {
     public int longestConsecutive(int[] nums) {
 
         int result_length =0;

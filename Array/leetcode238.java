@@ -53,7 +53,7 @@ import java.util.Arrays;
             input[i] = scanner.nextInt();
            }
 
-           Solution solution = new Solution();
+           leetcode128 solution = new leetcode128();
 
            int[] total = solution.productExceptSelf(input);
 
