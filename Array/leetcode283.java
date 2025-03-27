@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 
-public class Solution{
+public class leetcode283{
 
     public void moveZeroes(int[] nums) {
 
@@ -18,25 +18,18 @@ public class Solution{
          while (count < nums.length) {
             nums[count++] = 0;
         }
-    
-      
-
       
       
         System.out.println(Arrays.toString(nums));
       }
-   
 
-      
-
-    
 
     public static void main(String[] args) {
       
 
       Scanner scanner = new Scanner(System.in);
 
-      Solution solution = new Solution();
+      leetcode283 solution = new leetcode283();
 
       System.out.println("size");
 
