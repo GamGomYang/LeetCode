@@ -13,8 +13,8 @@
   </tr>
   <tr> 
     <td align="center">
-      <img src="https://img.shields.io/badge/-Python-blue?logo=python"><br/>
       <img src="https://img.shields.io/badge/-Java-orange?logo=java"><br/>
+      <img src="https://img.shields.io/badge/-Python-blue?logo=python"><br/>
       <img src="https://img.shields.io/badge/-Kotlin-purple?logo=kotlin">
     </td>
   </tr> 
