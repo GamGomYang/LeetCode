@@ -41,7 +41,7 @@
     <td>1</td>
     <td><a href="https://leetcode.com/problems/two-sum/">Two Sum</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/leetcode1.java">java</td>
     <td>Easy</td>
   </tr>
   <tr>
