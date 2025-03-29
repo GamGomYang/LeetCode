@@ -1,33 +1,21 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
-public class Solution{
+class Solution {
+   public List<List<String>> groupAnagrams(String[] strs) {
+      HashMap<String, List<String>> hashmap = new HashMap<>();
 
-public int longestPalindrome(String s) {
-   HashMap<Character,Integer> hashmap =  new HashMap<>();
-   
-   for(char c : s.toCharArray()){
-      hashmap.put(c,hashmap.getOrDefault(c, 0)+1);
-   }
+      for (String s : strs) {
 
-   int length = 0;
-   boolean single_string = false;
+         char[] chars = s.toCharArray();
+         Arrays.sort(chars);
+         String sorted = new String(chars);
 
-   for(int count: hashmap.values()){
-
-      if(count % 2 ==0){
-         length += count;
-
+         hashmap.computeIfAbsent(sorted, k -> new ArrayList<>()).add(s);
       }
 
-      else{
-         length += count -1;
-         single_string = true;
-      }
+      return new ArrayList<>(hashmap.values());
    }
-
-
-   return single_string ? length +1 : length;
-
-
-}
 }
