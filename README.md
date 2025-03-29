@@ -61,113 +61,23 @@
 
 ## String (14 문제)
 
-<table>
-  <tr>
-    <th>번호</th>
-    <th>제목</th>
-    <th>언어</th>
-    <th>풀이 링크</th>
-    <th>난이도</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td><a href="https://leetcode.com/problems/valid-palindrome/">Valid Palindrome</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Easy</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td><a href="https://leetcode.com/problems/valid-anagram/">Valid Anagram</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Easy</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">Longest Substring Without Repeating Characters</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td><a href="https://leetcode.com/problems/longest-palindrome/">Longest Palindrome</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Easy</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td><a href="https://leetcode.com/problems/minimum-window-substring/">Minimum Window Substring</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Hard</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td><a href="https://leetcode.com/problems/string-to-integer-atoi/">String to Integer (atoi)</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td><a href="https://leetcode.com/problems/longest-palindromic-substring/">Longest Palindromic Substring</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td><a href="https://leetcode.com/problems/find-all-anagrams-in-a-string/">Find All Anagrams in a String</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td><a href="https://leetcode.com/problems/group-anagrams/">Group Anagrams</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td><a href="https://leetcode.com/problems/longest-repeating-character-replacement/">Longest Repeating Character Replacement</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td><a href="https://leetcode.com/problems/longest-common-prefix/">Longest Common Prefix</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Easy</td>
-  </tr>
-  <tr>
-    <td>12</td>
-    <td><a href="https://leetcode.com/problems/largest-number/">Largest Number</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>13</td>
-    <td><a href="https://leetcode.com/problems/encode-and-decode-strings/">Encode and Decode Strings</a> (LintCode/LC Premium)</td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>14</td>
-    <td><a href="https://leetcode.com/problems/palindrome-pairs/">Palindrome Pairs</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Hard</td>
-  </tr>
-</table>
+| 번호 | 제목 | 언어 | 풀이 링크 | 난이도 |
+|---|---|---|---|---|
+| 1 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode125.java) | Easy |
+| 2 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |  | Easy |
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode3.java) | Medium |
+| 4 | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode409.java) | Easy |
+| 5 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |  | Hard |
+| 6 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |  | Medium |
+| 7 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode5.java) | Medium |
+| 8 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode438.java) | Medium |
+| 9 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode49.java) | Medium |
+| 10 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode424.java) | Medium |
+| 11 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode14.java) | Easy |
+| 12 | [Largest Number](https://leetcode.com/problems/largest-number/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |  | Medium |
+| 13 | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) (LintCode/LC Premium) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |  | Medium |
+| 14 | [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |  | Hard |
+
 
 ---
 
