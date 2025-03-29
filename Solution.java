@@ -1,30 +1,25 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
 
 class Solution {
-   public int characterReplacement(String s, int k) {
+   public List<List<String>> groupAnagrams(String[] strs) {
 
-     int[] count = new int[26];
+      //해시 테이블 선언
+      HashMap<String, List<String>> hashmap = new HashMap<>();
 
-      int left =0;
-      int max_count =0;
-      int max_len =0;
+      for (String s : strs) {
 
-      for(int right =0 ;right<s.length();right++){
-        char ch = s.charAt(right);
+         char[] chars = s.toCharArray();
+         Arrays.sort(chars);
+         String sorting = new String(chars);
+        // 만약 정렬된 단어가 존재한다면? -> 값에 단어 삽입
+        // 존재하지 않는다면? -> 새로운 ArrayList 생성후 단어 삽입
+         hashmap.computeIfAbsent(sorting, k -> new ArrayList<>()).add(s);
+      }
 
-        count[ch-'A']++;
-        max_count = Math.max(max_count, count[ch -'A']);
-
-        if((right - left +1)-max_count >k){
-         count[s.charAt(left) -'A']--;
-         left++;
-        }
- 
-        max_len = Math.max(max_len, right-left +1);
-            }
-
-
-            return max_len;
-
-       
+      //최종 값 (애너그램) 출력
+      return new ArrayList<>(hashmap.values());
    }
 }
