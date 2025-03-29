@@ -29,185 +29,33 @@
 
 ## Array (24 문제)
 
-<table>
-  <tr>
-    <th>번호</th>
-    <th>제목</th>
-    <th>언어</th>
-    <th>풀이 링크</th>
-    <th>난이도</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td><a href="https://leetcode.com/problems/two-sum/">Two Sum</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/>
-     <img src="https://img.shields.io/badge/-Python-blue?logo=python"><br/></td>
-    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode1.java">Java
-    <a href="https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode1.py">Python</td>
-    <td>Easy</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">Best Time to Buy and Sell Stock</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Easy</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td><a href="https://leetcode.com/problems/insert-interval/">Insert Interval</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td><a href="https://leetcode.com/problems/3sum/">3Sum</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td><a href="https://leetcode.com/problems/product-of-array-except-self/">Product of Array Except Self</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td><a href="https://leetcode.com/problems/combination-sum/">Combination Sum</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td><a href="https://leetcode.com/problems/merge-intervals/">Merge Intervals</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td><a href="https://leetcode.com/problems/majority-element/">Majority Element</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Easy</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td><a href="https://leetcode.com/problems/sort-colors/">Sort Colors</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td><a href="https://leetcode.com/problems/contains-duplicate/">Contains Duplicate</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Easy</td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td><a href="https://leetcode.com/problems/container-with-most-water/">Container With Most Water</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>12</td>
-    <td><a href="https://leetcode.com/problems/meeting-rooms/">Meeting Rooms</a> (LeetCode Premium)</td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Easy</td>
-  </tr>
-  <tr>
-    <td>13</td>
-    <td><a href="https://leetcode.com/problems/gas-station/">Gas Station</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>14</td>
-    <td><a href="https://leetcode.com/problems/longest-consecutive-sequence/">Longest Consecutive Sequence</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>15</td>
-    <td><a href="https://leetcode.com/problems/rotate-array/">Rotate Array</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>16</td>
-    <td><a href="https://leetcode.com/problems/contiguous-array/">Contiguous Array</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>17</td>
-    <td><a href="https://leetcode.com/problems/subarray-sum-equals-k/">Subarray Sum Equals K</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>18</td>
-    <td><a href="https://leetcode.com/problems/employee-free-time/">Employee Free Time</a> (LeetCode Premium)</td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Hard</td>
-  </tr>
-  <tr>
-    <td>19</td>
-    <td><a href="https://leetcode.com/problems/move-zeroes/">Move Zeroes</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Easy</td>
-  </tr>
-  <tr>
-    <td>20</td>
-    <td><a href="https://leetcode.com/problems/meeting-rooms-ii/">Meeting Rooms II</a> (LeetCode Premium)</td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>21</td>
-    <td><a href="https://leetcode.com/problems/sliding-window-maximum/">Sliding Window Maximum</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Hard</td>
-  </tr>
-  <tr>
-    <td>22</td>
-    <td><a href="https://leetcode.com/problems/squares-of-a-sorted-array/">Squares of a Sorted Array</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Easy</td>
-  </tr>
-  <tr>
-    <td>23</td>
-    <td><a href="https://leetcode.com/problems/3sum-closest/">3Sum Closest</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>24</td>
-    <td><a href="https://leetcode.com/problems/non-overlapping-intervals/">Non-overlapping Intervals</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
-    <td>Medium</td>
-  </tr>
-</table>
+
+| 번호 | 제목 | 언어 | 풀이 링크 | 난이도 |
+|---|---|---|---|---|
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode1.java), [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode1.py) | Easy |
+| 2 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode121.java) | Easy |
+| 3 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode57.py) | Medium |
+| 4 | [3Sum](https://leetcode.com/problems/3sum/) | | | Medium |
+| 5 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode238.java) | Medium |
+| 6 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | | | Medium |
+| 7 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | | | Medium |
+| 8 | [Majority Element](https://leetcode.com/problems/majority-element/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode169.java) | Easy |
+| 9 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode75.java) | Medium |
+| 10 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode217.java) | Easy |
+| 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | | | Medium |
+| 12 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) (LeetCode Premium) | | | Easy |
+| 13 | [Gas Station](https://leetcode.com/problems/gas-station/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode134.java) | Medium |
+| 14 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode128.java) | Medium |
+| 15 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | | | Medium |
+| 16 | [Contiguous Array](https://leetcode.com/problems/contiguous-array/) | | | Medium |
+| 17 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | | | Medium |
+| 18 | [Employee Free Time](https://leetcode.com/problems/employee-free-time/) (LeetCode Premium) | | | Hard |
+| 19 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode283.java) | Easy |
+| 20 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) (LeetCode Premium) | | | Medium |
+| 21 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | | | Hard |
+| 22 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode977.java) | Easy |
+| 23 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | | | Medium |
+| 24 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | | | Medium |
 
 ---
 
