@@ -11,8 +11,6 @@ class Solution {
       for(int i =0; i<length ;i++){
 
          number[i] = String.valueOf(nums[i]);
-
-         
       }
 
       Arrays.sort(number,(a,b)-> (b+a).compareTo(a+b));
