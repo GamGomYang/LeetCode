@@ -1,53 +1,24 @@
-import com.sun.tools.javac.Main;
 import java.util.Scanner;
-import java.uitl.List;
-import java.util.Arrays;
+import java.util.HashMap;
+
+public class Solution{
 
 
-class Solution {
-    public String longestPalindrome(String s) {
+    public String minWindow(String s, String t){
 
-        int length = s.length();
+        if(s.length() == 0 || t.length() == 0){
 
-        StringBuilder sb  = new StringBuilder();
+            return "";
+        }
+
 
         int left =0;
-        int right = length;
+        int right = 0;
 
-        char[] chars = new char[length];
-        chars = s.toCharArray();
 
-        for(int i=0 ; i<length-1; i++){
+        int count =0;
 
-            if(chars[left] == chars[right]){
-                right--;
-                left++;
-            }
-            else{
-                right--;
-            }
+
         
-        }
-    }
-
-    public static void main(String[] args){
-
-    Solution solution = new Solution();
-
-    Scanner scanner = new Scanner(System.in);
-
-    System.out.println(" input ");
-    
-    String input = scanner.nextLine();
-
-    String result;
-
-    result = solution.longestPalindrome(input);
-
-    System.out.println(result);
-
-
-
-    
     }
 }
