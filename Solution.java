@@ -1,24 +1,51 @@
-import java.util.Scanner;
-import java.util.HashMap;
+//ltc36
+import java.util.HashSet;
+import java.util.Set;
+
 
 public class Solution{
 
 
-    public String minWindow(String s, String t){
+    public boolean isValidSudoku(char[][] board) {
 
-        if(s.length() == 0 || t.length() == 0){
+        Set<Character>[] row = new HashSet[9];
+        Set<Character>[] column = new HashSet[9];
+        Set<Character>[] squ = new HashSet[9];
+        
+        for(int i=0 ; i< 9 ; i++){
 
-            return "";
+            row[i] = new HashSet<>();
+            column[i] = new HashSet<>();
+            squ[i] = new HashSet<>();
         }
 
+        for(int i=0 ; i<9 ; i++){
 
-        int left =0;
-        int right = 0;
+            for(int k =0 ; k<9 ; k++){
 
+                char c = board[i][k];
 
-        int count =0;
+                if( c == '.'){
+                    continue;
+                }
 
+                int squ_index = (i/3)*3 +(k/3);
 
-        
+                if( row[i].contains(c)||column[k].contains(c)||squ[squ_index].contains(c)){
+                    return false;
+                }
+                else{
+                    row[i].add(c);
+                    column[k].add(c);
+                    squ[squ_index].add(c);
+                }
+            }
+        }
+
+        return true;
+
     }
+
+
+    
 }
