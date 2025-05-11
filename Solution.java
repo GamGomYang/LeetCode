@@ -1,45 +1,29 @@
-import java.util.*;
-
+import java.util.HashSet;
+import java.util.Set;
 
 class Solution {
-    public void swap_matrix(int[][] matrix){
+    public void setZeroes(int[][] matrix) {
+        int width = matrix[0].length;
+        int height = matrix.length;
 
-        int length =  matrix.length;
-        
-        for(int i=0 ; i<length ; i++){
+        Set<Integer> rowSet = new HashSet<>();
+        Set<Integer> columnSet = new HashSet<>();
 
-            for(int k =i ; k< length ; k++){
-              int temp = matrix[i][k];
-              matrix[i][k] = matrix[k][i];
-              matrix[k][i] = temp;
-                
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                if (matrix[i][j] == 0) {
+                    rowSet.add(i);
+                    columnSet.add(j);
+                }
             }
         }
-    }
 
-    public void replace_matrix(int[][] matrix){
-
-        int length = matrix.length;
-
-
-        for(int i =0 ; i< length ; i++){
-            int right =length - 1;
-            int left =0;
-        while(right> left){
-
-            int temp = matrix[i][left];
-            matrix[i][left] = matrix[i][right];
-            matrix[i][right] = temp;
-            right--;
-            left++;
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                if (rowSet.contains(i) || columnSet.contains(j)) {
+                    matrix[i][j] = 0;
+                }
+            }
         }
-    }
-    }
-
-
-    public void rotate(int[][] matrix) {
-        swap_matrix(matrix);
-        replace_matrix(matrix);
-        
     }
 }
