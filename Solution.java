@@ -1,29 +1,60 @@
-import java.util.HashSet;
-import java.util.Set;
+import java.util.Scanner;
 
-class Solution {
-    public void setZeroes(int[][] matrix) {
-        int width = matrix[0].length;
-        int height = matrix.length;
+public class Solution{
+    public void swap_matrix(int[][] matrix){
+        int length = matrix.length;
+        for(int i =0 ; i< length ; i++){
+            for(int k =i ; k<length ; k++){
 
-        Set<Integer> rowSet = new HashSet<>();
-        Set<Integer> columnSet = new HashSet<>();
-
-        for (int i = 0; i < height; i++) {
-            for (int j = 0; j < width; j++) {
-                if (matrix[i][j] == 0) {
-                    rowSet.add(i);
-                    columnSet.add(j);
-                }
+                int temp = matrix[i][k];
+                matrix[i][k] = matrix[k][i];
+                matrix[k][i] = temp;
             }
         }
+    }
+    public void reverse_matrix(int[][] matrix){
+        int length = matrix.length;
+        for(int k =0 ; k<length ; k++){
+            int right = length -1;
+            int left = 0;
 
-        for (int i = 0; i < height; i++) {
-            for (int j = 0; j < width; j++) {
-                if (rowSet.contains(i) || columnSet.contains(j)) {
-                    matrix[i][j] = 0;
-                }
+            while(left<right){
+                int temp = matrix[k][right];
+                matrix[k][right] = matrix[k][left];
+                matrix[k][left] = temp;
+                right--; 
+                left++; 
             }
         }
+    }
+    public void rotate(int[][] matrix) {
+        swap_matrix(matrix);
+        reverse_matrix(matrix);
+        int length =  matrix.length;
+        for(int i=0 ; i< length ; i++){
+
+            System.out.print("[");
+            for(int k =0 ; k<length ; k++){
+                System.out.print(matrix[i][k]+" ");
+            }
+            System.out.print("]");
+            System.out.print("\n");
+        }
+    }
+    public static void main(String[] args) {
+        int length;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("length : ");
+        length = scanner.nextInt();
+        int[][] matrix = new int[length][length];
+        for(int  i =0 ; i<length ; i++){
+            for(int k =0 ; k< length ; k++){
+                System.out.print("["+i+"]"+"["+k+"]"+ " matrix ? :");
+                matrix[i][k]= scanner.nextInt();
+            }
+        }
+        Solution solution = new Solution();
+
+        solution.rotate(matrix);
     }
 }
