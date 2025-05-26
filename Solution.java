@@ -1,60 +1,29 @@
-import java.util.Scanner;
+/* The isBadVersion API is defined in the parent class VersionControl.
+      boolean isBadVersion(int version); */
 
-public class Solution{
-    public void swap_matrix(int[][] matrix){
-        int length = matrix.length;
-        for(int i =0 ; i< length ; i++){
-            for(int k =i ; k<length ; k++){
+      public class Solution extends VersionControl {
+        public int firstBadVersion(int n) {
 
-                int temp = matrix[i][k];
-                matrix[i][k] = matrix[k][i];
-                matrix[k][i] = temp;
+            int right =n;
+
+            int left =1;
+
+
+            while(left < right ){
+
+
+                int mid = left + (right - left)/2;
+
+                if(isBadVersion(mid)){
+                    right = mid;
+                }
+                else{
+                    left = mid+1;
+                }
+
             }
+
+            return left;
+            
         }
     }
-    public void reverse_matrix(int[][] matrix){
-        int length = matrix.length;
-        for(int k =0 ; k<length ; k++){
-            int right = length -1;
-            int left = 0;
-
-            while(left<right){
-                int temp = matrix[k][right];
-                matrix[k][right] = matrix[k][left];
-                matrix[k][left] = temp;
-                right--; 
-                left++; 
-            }
-        }
-    }
-    public void rotate(int[][] matrix) {
-        swap_matrix(matrix);
-        reverse_matrix(matrix);
-        int length =  matrix.length;
-        for(int i=0 ; i< length ; i++){
-
-            System.out.print("[");
-            for(int k =0 ; k<length ; k++){
-                System.out.print(matrix[i][k]+" ");
-            }
-            System.out.print("]");
-            System.out.print("\n");
-        }
-    }
-    public static void main(String[] args) {
-        int length;
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("length : ");
-        length = scanner.nextInt();
-        int[][] matrix = new int[length][length];
-        for(int  i =0 ; i<length ; i++){
-            for(int k =0 ; k< length ; k++){
-                System.out.print("["+i+"]"+"["+k+"]"+ " matrix ? :");
-                matrix[i][k]= scanner.nextInt();
-            }
-        }
-        Solution solution = new Solution();
-
-        solution.rotate(matrix);
-    }
-}
