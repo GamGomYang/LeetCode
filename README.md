@@ -4,6 +4,7 @@
 문제 목록과 각 문제의 풀이입니다.
 
 # 작성자
+
 <table>
  <tr>
     <td align="center"><a href="https://github.com/jinny-l"><img src="https://avatars.githubusercontent.com/GamGomYang" width="130px;" alt=""></a></td>
@@ -20,64 +21,59 @@
   </tr> 
 </table>
 
-
 <h1>문제 목록</h1>
 
-아래는 **Grind 75**에서 추천하는 총 169문제를 카테고리별로 정리한 표입니다.  
-
-
+아래는 **Grind 75**에서 추천하는 총 169문제를 카테고리별로 정리한 표입니다.
 
 ## Array (24 문제)
 
-
-| 번호 | 제목 | 언어 | 풀이 링크 | 난이도 |
-|---|---|---|---|---|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode1.java), [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode1.py) | Easy |
-| 2 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode121.java) | Easy |
-| 3 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode57.py) | Medium |
-| 4 | [3Sum](https://leetcode.com/problems/3sum/) | | | Medium |
-| 5 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode238.java) | Medium |
-| 6 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | | | Medium |
-| 7 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | | | Medium |
-| 8 | [Majority Element](https://leetcode.com/problems/majority-element/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode169.java) | Easy |
-| 9 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode75.java) | Medium |
-| 10 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode217.java) | Easy |
-| 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | | | Medium |
-| 12 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) (LeetCode Premium) | | | Easy |
-| 13 | [Gas Station](https://leetcode.com/problems/gas-station/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode134.java) | Medium |
-| 14 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode128.java) | Medium |
-| 15 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | | | Medium |
-| 16 | [Contiguous Array](https://leetcode.com/problems/contiguous-array/) | | | Medium |
-| 17 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | | | Medium |
-| 18 | [Employee Free Time](https://leetcode.com/problems/employee-free-time/) (LeetCode Premium) | | | Hard |
-| 19 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode283.java) | Easy |
-| 20 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) (LeetCode Premium) | | | Medium |
-| 21 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | | | Hard |
-| 22 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode977.java) | Easy |
-| 23 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | | | Medium |
-| 24 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | | | Medium |
+| 번호 | 제목                                                                                              | 언어                                                                                                                          | 풀이 링크                                                                                                                                                    | 난이도 |
+| ---- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | --- |
+| 1    | [Two Sum](https://leetcode.com/problems/two-sum/)                                                 | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode1.java), [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode1.py) | Easy   |
+| 2    | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java)                                                                  | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode121.java)                                                                              | Easy   |
+| 3    | [Insert Interval](https://leetcode.com/problems/insert-interval/)                                 | ![Python](https://img.shields.io/badge/-Python-blue?logo=python)                                                              | [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode57.py)                                                                               | Medium |
+| 4    | [3Sum](https://leetcode.com/problems/3sum/)                                                       |                                                                                                                               |                                                                                                                                                              | Medium |
+| 5    | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)       | ![Java](https://img.shields.io/badge/-Java-orange?logo=java)                                                                  | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode238.java)                                                                              | Medium |
+| 6    | [Combination Sum](https://leetcode.com/problems/combination-sum/)                                 |                                                                                                                               |                                                                                                                                                              | Medium |
+| 7    | [Merge Intervals](https://leetcode.com/problems/merge-intervals/)                                 |                                                                                                                               |                                                                                                                                                              | Medium |
+| 8    | [Majority Element](https://leetcode.com/problems/majority-element/)                               | ![Java](https://img.shields.io/badge/-Java-orange?logo=java)                                                                  | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode169.java)                                                                              | Easy   |
+| 9    | [Sort Colors](https://leetcode.com/problems/sort-colors/)                                         | ![Java](https://img.shields.io/badge/-Java-orange?logo=java)                                                                  | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode75.java)                                                                               | Medium |
+| 10   | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                           | ![Java](https://img.shields.io/badge/-Java-orange?logo=java)                                                                  | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode217.java)                                                                              | Easy   |
+| 11   | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)             |                                                                                                                               |                                                                                                                                                              | Medium |
+| 12   | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) (LeetCode Premium)                  |                                                                                                                               |                                                                                                                                                              | Easy   |
+| 13   | [Gas Station](https://leetcode.com/problems/gas-station/)                                         | ![Java](https://img.shields.io/badge/-Java-orange?logo=java)                                                                  | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode134.java)                                                                              | Medium |
+| 14   | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)       | ![Java](https://img.shields.io/badge/-Java-orange?logo=java)                                                                  | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode128.java)                                                                              | Medium |
+| 15   | [Rotate Array](https://leetcode.com/problems/rotate-array/)                                       |                                                                                                                               |                                                                                                                                                              | Medium |
+| 16   | [Contiguous Array](https://leetcode.com/problems/contiguous-array/)                               |                                                                                                                               |                                                                                                                                                              | Medium |
+| 17   | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                     |                                                                                                                               |                                                                                                                                                              | Medium |
+| 18   | [Employee Free Time](https://leetcode.com/problems/employee-free-time/) (LeetCode Premium)        |                                                                                                                               |                                                                                                                                                              | Hard   |
+| 19   | [Move Zeroes](https://leetcode.com/problems/move-zeroes/)                                         | ![Java](https://img.shields.io/badge/-Java-orange?logo=java)                                                                  | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode283.java)                                                                              | Easy   |
+| 20   | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) (LeetCode Premium)            |                                                                                                                               |                                                                                                                                                              | Medium |
+| 21   | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                   |                                                                                                                               |                                                                                                                                                              | Hard   |
+| 22   | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)             | ![Java](https://img.shields.io/badge/-Java-orange?logo=java)                                                                  | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode977.java)                                                                              | Easy   |
+| 23   | [3Sum Closest](https://leetcode.com/problems/3sum-closest/)                                       |                                                                                                                               |                                                                                                                                                              | Medium |
+| 24   | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)             |                                                                                                                               |                                                                                                                                                              | Medium |    |
 
 ---
 
 ## String (14 문제)
 
-| 번호 | 제목 | 언어 | 풀이 링크 | 난이도 |
-|---|---|---|---|---|
-| 1 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode125.java) | Easy |
-| 2 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |  | Easy |
-| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode3.java) | Medium |
-| 4 | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode409.java) | Easy |
-| 5 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |  | Hard |
-| 6 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |  | Medium |
-| 7 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode5.java) | Medium |
-| 8 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode438.java) | Medium |
-| 9 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode49.java) | Medium |
-| 10 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode424.java) | Medium |
-| 11 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode14.java) | Easy |
-| 12 | [Largest Number](https://leetcode.com/problems/largest-number/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |  | Medium |
-| 13 | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) (LintCode/LC Premium) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |  | Medium |
-| 14 | [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |  | Hard |
-
+| 번호 | 제목                                                                                                                            | 언어                                                         | 풀이 링크                                                                        | 난이도 |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------- | ------ | --- |
+| 1    | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                                             | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode125.java) | Easy   |
+| 2    | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                                                   | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Easy   |
+| 3    | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode3.java)   | Medium |
+| 4    | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)                                                         | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode409.java) | Easy   |
+| 5    | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)                                             | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Hard   |
+| 6    | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                               | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Medium |
+| 7    | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                                   | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode5.java)   | Medium |
+| 8    | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)                                   | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode438.java) | Medium |
+| 9    | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                                                 | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode49.java)  | Medium |
+| 10   | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)               | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode424.java) | Medium |
+| 11   | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                                   | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode14.java)  | Easy   |
+| 12   | [Largest Number](https://leetcode.com/problems/largest-number/)                                                                 | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Medium |
+| 13   | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) (LintCode/LC Premium)                     | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Medium |
+| 14   | [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)                                                             | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Hard   |    |
 
 ---
 
@@ -1205,4 +1201,3 @@
     <td>Easy</td>
   </tr>
 </table>
-
