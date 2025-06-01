@@ -1,7 +1,3 @@
-import java.util.Scanner;
-import java.util.List;
-import java.util.Arrays;
-
 class Solution {
     public void solveSudoku(char[][] board) {
 
