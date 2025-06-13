@@ -60,7 +60,7 @@ More actions
 ## String (14 문제)
 
 | 번호 | 제목                                                                                                                            | 언어                                                         | 풀이 링크                                                                        | 난이도 |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------- | ------ | --- |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------- | ------ |
 | 1    | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                                             | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode125.java) | Easy   |
 | 2    | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                                                   | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Easy   |
 | 3    | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode3.java)   | Medium |
@@ -74,7 +74,8 @@ More actions
 | 11   | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                                   | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode14.java)  | Easy   |
 | 12   | [Largest Number](https://leetcode.com/problems/largest-number/)                                                                 | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Medium |
 | 13   | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) (LintCode/LC Premium)                     | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Medium |
-| 14   | [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)                                                             | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Hard   |    |
+| 14   | [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)                                                             | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Hard   |
+
 
 ---
 
