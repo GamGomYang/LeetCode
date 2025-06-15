@@ -312,133 +312,84 @@
 //                 matrix[k][i] = temp;
 //             }
 //         }
-
 //     }
 //     public static void main(String args){
-
 //         int width = 0;
 //         int height =0;
-
-//         Scanner scanner = new Scanner(System.in);
-        
+//         Scanner scanner = new Scanner(System.in); 
 //         System.out.print("width size: ");
 //         width = scanner.nextInt();
-
 //         System.out.print("height size : ");
 //         height = scanner.nextInt();
-
-
 //         int[][] matrix = new int[width][height];
-
 //         for(int i =0 ; i< height ; i++){
-
 //             for(int k =0 ; k< width ; k++){
-
 //                 System.out.print(i+"row "+k+"column"+" matrix value : ");
 //             }
 //         }
-
 //         Solution solution = new Solution();
-
 //         solution.matrix_output(matrix);
-
-
 //         for(int i =0 ; i< height ; i++){
-
 //             for(int k =0 ; k< width ; k++){
-
-
 //                 System.out.print(matrix[i][k]);
 //             }
 //             System.out.print("\n");
 //         }
-
-
 //     }
 //  }
-
-
 // import java.util.Scanner;
 // import java.util.Stack;
-
 // class Solution {
 //     public boolean isValid(String s) {
-
-        
-
-//         int length = s.length();
-        
+//         int length = s.length(); 
 //         if(length <= 1){
 //             return false;
 //         }
 //         char[] array = s.toCharArray();
-
 //         char compare_char;
-
 //         Stack<Character> stack = new Stack<>();
-
 //         for(int i =0 ; i<length ; i++){
-
-//             if(array[i] == '['||array[i] == '{'||array[i] == '('){
-                
+//             if(array[i] == '['||array[i] == '{'||array[i] == '('){    
 //                 stack.push(s.charAt(i));
 //             }else if((array[i] == ']'||array[i] == '}'||array[i] == ')')){
 //                 if(stack.isEmpty()){
 //                     return false;
 //                 }
-                
 //                 compare_char = stack.pop();
-
 //                 if(array[i] == ')'){
 //                     if(compare_char =='('){
 //                         continue;
-
 //                     }else{
 //                         return false;
 //                     }
-
-//                 }
-                
+//                 }        
 //                 if(array[i] == '}'){
 //                     if(compare_char =='{'){
 //                         continue;
-
 //                     }else{
 //                         return false;
 //                     }
-
-//                 }
-                
+//                 }             
 //                 if(array[i] == ']'){
 //                     if(compare_char =='['){
 //                         continue;
 //                     }else{
 //                         return false;
 //                     }
-
 //                 }
-//             }
-
-            
+//             }       
 //         }
-
 //      if(stack.isEmpty()){
 //         return true;
 //      }else{
 //         return false;
-//      }
-        
+//      } 
 //     }
-
 //     public static void main(String args[]){
-
 //         Scanner scanner = new Scanner(System.in);
-
 //     }
 // }
-
 // import java.util.Scanner;
-
 // class Solution {
 //     public int solution(int[] schedules, int[][] timelogs, int startday) {
 //         int result = 0;
@@ -446,13 +397,10 @@
 //         if(timelogs[0].length != 7){
 //             return 0;
 //         }
-
 //         for (int i = 0; i < size; i++) {
 //             int current_day = startday;
 //             int count = 0;
 //             int not_weekend =0;
-        
-
 //             for (int k = 0; k < 7; k++) {
 //                 if (current_day != 6 && current_day != 7) {
 //                     not_weekend++;
@@ -462,79 +410,83 @@
 //                 }
 //                 current_day = (current_day % 7) + 1;
 //             }
-
 //             if (count == 5 && not_weekend == 5) {
 //                 result++;
 //             }
 //         }
-
 //         return result;
 //     }
-
 //     public static void main(String args[]){
-
 //         Scanner scanner = new Scanner(System.in);
-
-//         Solution solution = new Solution();
-
-        
-
-
-        
+//         Solution solution = new Solution(); 
 //     }
 // }
-
 // import java.util.Scanner;
 // import java.util.Arrays;
-
-
 // class Solution {
 //     public int strStr(String haystack, String needle) {
 //         int hay_length = haystack.length();
 //         int needle_length = needle.length();
-
-
 //         char[] arr = new char[haystack.length()];
-
-     
 //             int left = 0 ;
 //             int right = hay_length-1;
 //             int index =0;
-
 //         while(left < right){
-
 //             if(arr[left] == needle.charAt(index)){
 //                 right = left + (needle_length-1);
 //                 if(arr[right] == needle.charAt(right)){
 //                     left++;
 //                     right--;
 //                 }
-
 //             }
-
-
 //         }
-
 //         public static void main(String args[]){
-
 //             Scanner scanner = new Scanner(System.in);
-
 //             Solution solution = new Solution();
-
-
-
 //         }
+//     }
+// }
 
+// import java.util.Scanner;
 
+// public class Solution{
 
+//     void swap_matrix(int[][] matrix){
 
+//         int length = matrix.length;
+//         int left =0;
+//         int right = length -1;
 
-        
+//         for(int i =0 ; i< length ; i++){
+//         while(left < right){
 
+//             int temp = matrix[i][left];
+//             matrix[i][left] = matrix [i][right];
+//             matrix[i][right] = temp;}
+//         }
+//     }
+//     public static void main( String args[]){
 
+//         Scanner scanner =  new Scanner(System.in);
+//         Solution solution = new Solution();
+//         int size = scanner.nextInt();
+//         int[][] matrix = new int[size][size];
+
+//         for(int i =0 ; i<size ; i ++ ){
+//             for(int  k = 0 ; k<size ; k++){
+//                 System.out.println(i + " "+k+ " input ");
+//                 matrix[i][k] = scanner.nextInt();
+//             }
+//         }
+//         solution.swap_matrix(matrix);
+
+//         for(int i =0 ; i< size ; i++){
+//             for(int k =0 ; k< size ; k++ ){
+//                 System.out.print(matrix[i][k]);
+//             }
+//         }
 
         
 //     }
 // }
-
 
