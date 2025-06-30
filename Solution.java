@@ -489,52 +489,52 @@
 // }
 
 
-import java.util.*;
+// import java.util.*;
 
-class Solution {
+// class Solution {
 
-    private int[][] image;
-    private int originalColor , newColor;
-    private int rows, cols;
+//     private int[][] image;
+//     private int originalColor , newColor;
+//     private int rows, cols;
 
-    public int[][] floodFill(int[][] image, int sr, int sc, int color) {
-        this.image = image;
-        this.rows = image.length;
-        this.cols = image[0].length;
-        this.originalColor = image[sr][sc];
-        this.newColor = color;
+//     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
+//         this.image = image;
+//         this.rows = image.length;
+//         this.cols = image[0].length;
+//         this.originalColor = image[sr][sc];
+//         this.newColor = color;
 
-        if(originalColor == newColor){
-            return image;
+//         if(originalColor == newColor){
+//             return image;
 
-        }
+//         }
 
-        dfs(sr,sc);
+//         dfs(sr,sc);
 
-        return this.image;
+//         return this.image;
         
-    }
+//     }
 
-    private void dfs(int r, int c){
-        if(r< 0 || r>= rows || c<0 ||c>=cols){
-            return;
+//     private void dfs(int r, int c){
+//         if(r< 0 || r>= rows || c<0 ||c>=cols){
+//             return;
 
-        }
-
-
-        if(image[r][c] != originalColor){
-            return;
-        }
+//         }
 
 
-        image[r][c] = newColor;
-        dfs(r+1, c);
-        dfs(r-1, c);
+//         if(image[r][c] != originalColor){
+//             return;
+//         }
 
-        dfs(r,c+1);
-        dfs(r,c-1);
-    }
-}
+
+//         image[r][c] = newColor;
+//         dfs(r+1, c);
+//         dfs(r-1, c);
+
+//         dfs(r,c+1);
+//         dfs(r,c-1);
+//     }
+// }
 
 
 
