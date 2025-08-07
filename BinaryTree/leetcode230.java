@@ -1,7 +1,5 @@
 import java.util.*;
-public class leetcode230 {
-    
-}
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
