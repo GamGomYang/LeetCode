@@ -14,21 +14,37 @@
  * }
  */
 class Solution {
-    public TreeNode sortedArrayToBST(int[] nums) {
-        return buildBST(nums, 0, nums.length - 1);
+    public boolean isBalanced(TreeNode root) {
+        return balanceChecker(root) != -1;
+        
     }
 
-    private TreeNode buildBST(int[] nums, int left, int right) {
-        if (left > right) return null;
+    private int balanceChecker(TreeNode node){
 
-        int mid = left + (right - left) / 2;  
-        TreeNode node = new TreeNode(nums[mid]);  
+        if( node == null ){
 
-        node.left = buildBST(nums, left , mid-1);
-        node.right = buildBST(nums, mid+1 , right);
+            return 0;
+        }
 
-        return node;
+        int leftNode = balanceChecker(node.left);
+        int rightNode = balanceChecker(node.right);
 
+        if(leftNode == -1){
 
+            return -1;
+        }
+        if(rightNode == -1){
+
+            return -1;
+        }
+
+        if(Math.abs(leftNode - rightNode)>1){
+            return -1;
+        }
+
+        
+        return Math.max(leftNode , rightNode )+1;
     }
+
+
 }
