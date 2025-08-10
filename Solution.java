@@ -1,7 +1,4 @@
-import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -18,32 +15,38 @@ import java.util.Queue;
  * }
  */
 class Solution {
-    public List<List<Integer>> levelOrder(TreeNode root) {
+    int count =0;
+    int result =0;
 
-        List<List<Integer>> result = new ArrayList<>();
-        if (root == null) return result;
+    public int kthSmallest(TreeNode root, int k) {
 
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
+        bstCounter(root, k);
 
-        while (!queue.isEmpty()) {
-            int levelSize = queue.size();
-            List<Integer> currentLevel = new ArrayList<>();
-
-            for (int i = 0; i < levelSize; i++) {
-            TreeNode currentNode = queue.poll();
-            currentLevel.add(currentNode.val);
-
-            if (currentNode.left != null) {
-                queue.offer(currentNode.left);
-            }
-            if (currentNode.right != null) {
-                queue.offer(currentNode.right);
-            }
-            }
-            result.add(currentLevel);
-        }
         return result;
 
+
     }
+    public void bstCounter(TreeNode node , int k){
+
+        if(node == null){
+
+            return;
+        }
+        bstCounter(node.left ,  k);
+
+        count++;
+        
+        if(count == k){
+            result = node.val;
+        }
+
+        bstCounter(node.right,  k);
+    }
+
+    public static void main(String args[]){
+        
+    }
+
+
+
 }
