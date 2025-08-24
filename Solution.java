@@ -1,4 +1,3 @@
-import java.util.*;
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -15,38 +14,22 @@ import java.util.*;
  * }
  */
 class Solution {
-    int count =0;
-    int result =0;
+    public boolean isValidBST(TreeNode root) {
+        return bstChecker(root, null , null);
+        }
 
-    public int kthSmallest(TreeNode root, int k) {
-
-        bstCounter(root, k);
-
-        return result;
-
-
-    }
-    public void bstCounter(TreeNode node , int k){
+    public boolean bstChecker(TreeNode node , Integer min , Integer max){
 
         if(node == null){
-
-            return;
-        }
-        bstCounter(node.left ,  k);
-
-        count++;
-        
-        if(count == k){
-            result = node.val;
+            return true;
         }
 
-        bstCounter(node.right,  k);
-    }
+        if((min != null && node.val <= min) || (max != null && node.val >= max)){
+            return false;
+        }
 
-    public static void main(String args[]){
+
+        return bstChecker(node.left , min , node.val)&& bstChecker(node.right , node.val , max);
         
     }
-
-
-
 }
