@@ -1,24 +1,41 @@
+import java.util.*;
+
+
 class Solution {
-    public String addBinary(String a, String b) {
-        StringBuilder sb = new StringBuilder();
+    public int solution(String s) {
+        int n = s.length();
+        
+        int answer = n;
 
-        int i = a.length() - 1;
-        int j = b.length() - 1;
-        int carry = 0;
+        for(int size = 1; size <=n/2 ; size++){
+            StringBuilder compressed = new StringBuilder();
 
-        while (i >= 0 || j >= 0) {
-            int sum = carry;
+            String prev = s.substring(0 , size);
 
-            if (i >= 0) sum += a.charAt(i--) - '0'; // '0' 또는 '1'을 int로 변환
-            if (j >= 0) sum += b.charAt(j--) - '0';
+            int count =1;
 
-            sb.append(sum % 2);   // 현재 자릿수 값
-            carry = sum / 2;      // 올림
+            for(int k =size ; k<= n ; k += size){
+                String next = (k+size <= n)? s.substring(k, k+size): s.substring(k);
+
+                if(prev.equals(next)){
+                    count++;
+
+                }else{
+                    if(count >1){
+                        compressed.append(count);}
+                        compressed.append(prev);
+                        prev = next;
+                        count =1;
+                }
+            }
+            if(count>1){
+                compressed.append(count);
+            }
+                compressed.append(prev);
+            answer = Math.min(answer, compressed.length());
+
+
         }
-
-        if (carry != 0) sb.append(carry); // 마지막에 올림이 남아있으면 추가
-
-        return sb.reverse().toString(); // 뒤집어서 반환
+        return answer;
     }
 }
-
