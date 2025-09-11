@@ -1,41 +1,39 @@
-import java.util.*;
+
 
 
 class Solution {
-    public int solution(String s) {
-        int n = s.length();
-        
-        int answer = n;
+    public String addBinary(String a, String b) {
+        StringBuilder binaryBuilder = new StringBuilder();
 
-        for(int size = 1; size <=n/2 ; size++){
-            StringBuilder compressed = new StringBuilder();
 
-            String prev = s.substring(0 , size);
+        int a_length = a.length()-1;
+        int b_length = b.length()-1;
 
-            int count =1;
+        int carry =0;
+        int sum =0;
 
-            for(int k =size ; k<= n ; k += size){
-                String next = (k+size <= n)? s.substring(k, k+size): s.substring(k);
 
-                if(prev.equals(next)){
-                    count++;
+        while(a_length>=0 || b_length>=0 || carry>0 ){
+            sum = carry;
 
-                }else{
-                    if(count >1){
-                        compressed.append(count);}
-                        compressed.append(prev);
-                        prev = next;
-                        count =1;
-                }
+            if(a_length>= 0 ){
+                sum+= a.charAt(a_length--)-'0';
             }
-            if(count>1){
-                compressed.append(count);
+            if(b_length>= 0){
+                sum+= b.charAt(b_length--)-'0';     
             }
-                compressed.append(prev);
-            answer = Math.min(answer, compressed.length());
 
+            binaryBuilder.append(sum%2);
 
+            carry = sum/2;
         }
-        return answer;
+
+        binaryBuilder.reverse();
+        
+        return binaryBuilder.toString();
+    
+    
+    
     }
 }
+
