@@ -1,39 +1,53 @@
+/*class Solution {
+    public int findDuplicate(int[] nums) {
+        int length = nums.length;
 
+        int answer =0;
+        int right =0;
+        int left;
+        
+        int compare =0;
 
+        while(answer== 0){
+            compare = nums[right];
 
-class Solution {
-    public String addBinary(String a, String b) {
-        StringBuilder binaryBuilder = new StringBuilder();
+            for(left =right+1 ; left <length; left ++){
+                if(compare == nums[left]){
 
-
-        int a_length = a.length()-1;
-        int b_length = b.length()-1;
-
-        int carry =0;
-        int sum =0;
-
-
-        while(a_length>=0 || b_length>=0 || carry>0 ){
-            sum = carry;
-
-            if(a_length>= 0 ){
-                sum+= a.charAt(a_length--)-'0';
-            }
-            if(b_length>= 0){
-                sum+= b.charAt(b_length--)-'0';     
+                    answer = compare;
+                    break;
+                }
             }
 
-            binaryBuilder.append(sum%2);
-
-            carry = sum/2;
+            right ++;
+            
         }
 
-        binaryBuilder.reverse();
+
+        return answer;
+
         
-        return binaryBuilder.toString();
-    
-    
-    
+    }
+}*/
+
+import java.util.*;
+
+class Solution {
+    public int findDuplicate(int[] nums) {
+        int length = nums.length;
+
+        Set<Integer> seen = new HashSet<>();
+        int answer=0;
+
+        for (int num : nums) {
+            if (seen.contains(num)) {
+                answer = num;
+            }
+            seen.add(num);
+        }
+        
+        
+        return answer;
     }
 }
 
