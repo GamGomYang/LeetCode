@@ -1,49 +1,56 @@
 import java.util.*;
+class Solution {
+    public boolean backspaceCompare(String s, String t) {
+        Deque<Character> s_stack = new ArrayDeque<>();
+        Deque<Character> t_stack = new ArrayDeque<>();
 
-class MinStack {
-    Deque<Integer> stack;
-    Deque<Integer> min_stack;
+        StringBuilder s_sb = new StringBuilder();
+        StringBuilder t_sb = new StringBuilder();
 
-    public MinStack() {
-        stack = new ArrayDeque<>();
-        min_stack = new ArrayDeque();
-        
-    }
-    
-    public void push(int val) {
-   
-        stack.push(val);
-        if(min_stack.isEmpty() || val<= min_stack.peek()){
-        min_stack.push(val);}
-
-    }
-    
-    public void pop() {
-        int result = stack.pop();
-        if(result == min_stack.peek()){
-        min_stack.pop();}
+        int s_length = s.length();
+        int t_length = t.length();
 
 
-    }
-    
-    public int top() {
-        int result = stack.pop();
-        stack.push(result);
-        return result;
-        
-    }
-    
-    public int getMin() {
-        return min_stack.peek();
+        for(int i =0; i< s_length ; i++){
+            char s_char = s.charAt(i);
+
+            if(s_char != '#'){
+                s_stack.push(s_char);
+            }else{
+                
+                if(!s_stack.isEmpty()){
+                    s_stack.pop();}
+            }
+        }
+
+        for(int k =0; k< t_length ; k++){
+            char t_char = t.charAt(k);
+
+            if(t_char != '#'){
+                t_stack.push(t_char);
+               
+            }else{
+                if(!t_stack.isEmpty()){
+                t_stack.pop();}
+            }
+        }
+
+
+        while(!s_stack.isEmpty()){
+            s_sb.append(s_stack.pop());
+        }
+        while(!t_stack.isEmpty()){
+            t_sb.append(t_stack.pop());
+        }
+
+        String s_result = s_sb.toString();
+        String t_result = t_sb.toString();
+
+        if(s_result.equals(t_result)){
+            return true;
+        }else{
+            return false;
+        }
 
     }
 }
-
-/**
- * Your MinStack object will be instantiated and called as such:
- * MinStack obj = new MinStack();
- * obj.push(val);
- * obj.pop();
- * int param_3 = obj.top();
- * int param_4 = obj.getMin();
- */
