@@ -1,56 +1,49 @@
 import java.util.*;
 
-class MyQueue {
-    Stack<Integer> stack1;
-    Stack<Integer> stack2;
+class Solution {
+    public int evalRPN(String[] tokens) {
+        //자바에서 stack을 선언할때는 deque를 쓰자.
+        //Deque stack = new ArrayDeque
+        Deque<Integer> stack = new ArrayDeque<>();
+        int tokenLength = tokens.length;
+        int result =0;
 
 
-    public MyQueue() {
-        stack1 = new Stack<>();
-        stack2 = new Stack<>();
-    }
+        //string-> int형으로 바꾸는법 Integer.parseInt() 이거임
+        // 문자열은 !=, == boolean연산이 안됨 -> .equals 써야함.
+        // 어차피 문자열 
 
-    public void queue_stack(){
-        if(stack2.isEmpty()){
-            while(!stack1.isEmpty()){
-                stack2.push(stack1.pop());
+        for(String present : tokens){
+            int present_int = 0;
+            if(present.equals("+")){
+                int sum = stack.pop() + stack.pop();
+                stack.push(sum);
             }
+            else if(present.equals("-")){
+                int a = stack.pop();
+                int b= stack.pop();
+                stack.push(b-a);
+            }
+            else if(present.equals("*")){
+                int mul = stack.pop()*stack.pop();
+                stack.push(mul);
+            }
+            else if(present.equals("/")){
+                int a = stack.pop();
+                int b= stack.pop();
+                stack.push(b/a);
+
+            }else{
+                present_int = Integer.parseInt(present);
+                stack.push(present_int);
+            }
+
         }
-    }
-    
-    public void push(int x) {
-        stack1.push(x);
-    }
-    
-    public int pop() {
-        queue_stack();
-        int result = stack2.pop();
+
+        result = stack.pop();
+
         return result;
-    }
-    
-    public int peek() {
-        queue_stack();
-        int result = stack2.pop();
-        stack2.push(result);
-        return result;
-        
-    }
-    
-    public boolean empty() {
-        if(stack1.isEmpty() && stack2.isEmpty()){
-            return true;
-        }else{
-            return false;
-        }
+
         
     }
 }
-
-/**
- * Your MyQueue object will be instantiated and called as such:
- * MyQueue obj = new MyQueue();
- * obj.push(x);
- * int param_2 = obj.pop();
- * int param_3 = obj.peek();
- * boolean param_4 = obj.empty();
- */
