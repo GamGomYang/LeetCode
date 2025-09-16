@@ -1,56 +1,34 @@
-import java.util.*;
+import java.util.StringBuilder;
+import java.util.Deque;
+import java.util.ArrayDeque;
+
 class Solution {
-    public boolean backspaceCompare(String s, String t) {
-        Deque<Character> s_stack = new ArrayDeque<>();
-        Deque<Character> t_stack = new ArrayDeque<>();
+    public String decodeString(String s) {
+        Deque<Character> a_stack = new ArrayDeque<>();
+        Deque<Character> b_stack = new ArrayDeque<>();
+        StringBuilder a_decoder = new StringBuilder();
+        StringBuilder b_decoder = new StringBuilder();
+        s_length = s.length();
 
-        StringBuilder s_sb = new StringBuilder();
-        StringBuilder t_sb = new StringBuilder();
-
-        int s_length = s.length();
-        int t_length = t.length();
-
-
-        for(int i =0; i< s_length ; i++){
-            char s_char = s.charAt(i);
-
-            if(s_char != '#'){
-                s_stack.push(s_char);
-            }else{
-                
-                if(!s_stack.isEmpty()){
-                    s_stack.pop();}
+        for(int i =0 ; i<s_length ; i++){
+            if(s.charAt(i) == ']'){
+                // [ 나올때까지 pop();
+                while(stack.pop() == '['){
+                a_decoder.append(stack.pop());
+                String result = a_decoder.toString();
+                int num = Integer.ParseInt(a_stack.pop());
+                for(int k =0 ; k< num ; k++){
+                    b_decoder.append(result);
+                } }
             }
-        }
-
-        for(int k =0; k< t_length ; k++){
-            char t_char = t.charAt(k);
-
-            if(t_char != '#'){
-                t_stack.push(t_char);
-               
-            }else{
-                if(!t_stack.isEmpty()){
-                t_stack.pop();}
-            }
-        }
-
-
-        while(!s_stack.isEmpty()){
-            s_sb.append(s_stack.pop());
-        }
-        while(!t_stack.isEmpty()){
-            t_sb.append(t_stack.pop());
-        }
-
-        String s_result = s_sb.toString();
-        String t_result = t_sb.toString();
-
-        if(s_result.equals(t_result)){
-            return true;
         }else{
-            return false;
+        stack.push(s.charAt(i));
         }
 
+        String answer;
+
+
+        return answer;
+        
     }
 }
