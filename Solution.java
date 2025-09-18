@@ -1,34 +1,38 @@
-import java.util.StringBuilder;
-import java.util.Deque;
-import java.util.ArrayDeque;
+//LTC735 solving..
+
+import java.util.*;
 
 class Solution {
-    public String decodeString(String s) {
-        Deque<Character> a_stack = new ArrayDeque<>();
-        Deque<Character> b_stack = new ArrayDeque<>();
-        StringBuilder a_decoder = new StringBuilder();
-        StringBuilder b_decoder = new StringBuilder();
-        s_length = s.length();
+    public int[] asteroidCollision(int[] asteroids) {
+        Deque<Integer> stack = new ArrayDeque<>();
+        
+        int length = asteroids.length;
+        // 자바에서 절댓값 매서드 -> Math.abs
+        for(int i =0 ; i< length ; i++){
+            // int result = 0;
 
-        for(int i =0 ; i<s_length ; i++){
-            if(s.charAt(i) == ']'){
-                // [ 나올때까지 pop();
-                while(stack.pop() == '['){
-                a_decoder.append(stack.pop());
-                String result = a_decoder.toString();
-                int num = Integer.ParseInt(a_stack.pop());
-                for(int k =0 ; k< num ; k++){
-                    b_decoder.append(result);
-                } }
-            }
-        }else{
-        stack.push(s.charAt(i));
+            // if(asteroids[i]>0){
+            //     stack.push(asteroids[i]);
+            // }else{
+            //     int compare_1 = stack.pop();
+            //     int compare_2 = Math.abs(asteroids[i]);
+
+            //     if(compare_1 - compare_2 ==0){
+            //         continue;
+            //     }
+            //     else if(compare2 > compare_1){
+
+
+            //     }
+            // }
+            
         }
 
-        String answer;
-
-
+        int[] answer = new int[stack.size()];
+        for (int i = stack.size() - 1; i >= 0; i--) {
+            answer[i] = stack.pop();
+        }
         return answer;
-        
+
     }
 }
