@@ -28,23 +28,36 @@
 //     }
 // }
 
+// import java.util.*;
+
+// class Solution {
+//     public String convertToTitle(int columnNumber) {
+
+//         StringBuilder sb= new StringBuilder();
+
+//         while (columnNumber > 0) {
+//             columnNumber--; 
+//             char currentChar = (char) ('A' + (columnNumber % 26));
+//             sb.append(currentChar);
+//             columnNumber /= 26;
+//         }
+//         return sb.reverse().toString();
+        
+        
+//     }
+// }
+
 import java.util.*;
 
 class Solution {
-    public String convertToTitle(int columnNumber) {
+    public int titleToNumber(String columnTitle) {
+        int length = columnTitle.length();
+        int result = 0;
 
-        StringBuilder sb= new StringBuilder();
-
-        while (columnNumber > 0) {
-            columnNumber--; 
-            char currentChar = (char) ('A' + (columnNumber % 26));
-            sb.append(currentChar);
-            columnNumber /= 26;
+        for (int i = 0; i < length; i++) { 
+            result = result * 26 + (columnTitle.charAt(i) - 'A' + 1);
         }
-        return sb.reverse().toString();
-        
-        
+
+        return result;
     }
 }
-
-
