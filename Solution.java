@@ -1,63 +1,50 @@
-// import java.util.*;
-
-// class Solution {
-//     public int calculate(String s) {
-
-//         Deque<Character> stack = new ArrayDeque<>();
-//         StringBuilder sb = new StringBuilder();
-//         Deque<Character> cal_stack = new ArrayDeque<>();
-//         Deque<Integer> stack_1 =  new ArrayDeque<>();
-
-//         int length = s.length();
-
-//         for(int i =0 ; i< length ; i++){
-//             if(s.charAt(i)>='0'||s.charAt(i)<='9'){
-//                 stack.push(s.charAt(i));
-                
-//             }else{
-//                 while(!stack.isEmpty()){
-//                 sb.append(stack.pop());}
-//                 String parm_1 = sb.reverse().toString();
-//                 int intParm_1 = Integer.parseInt(parm_1);
-
-//                 stack_1.push(intParm_1);
-                
-//             }
-            
-//         }
-//     }
-// }
-
-// import java.util.*;
-
-// class Solution {
-//     public String convertToTitle(int columnNumber) {
-
-//         StringBuilder sb= new StringBuilder();
-
-//         while (columnNumber > 0) {
-//             columnNumber--; 
-//             char currentChar = (char) ('A' + (columnNumber % 26));
-//             sb.append(currentChar);
-//             columnNumber /= 26;
-//         }
-//         return sb.reverse().toString();
-        
-        
-//     }
-// }
+/*
+//solution 1 :브르트 포스 -> time exceed
 
 import java.util.*;
 
-class Solution {
-    public int titleToNumber(String columnTitle) {
-        int length = columnTitle.length();
-        int result = 0;
+public class solution {
 
-        for (int i = 0; i < length; i++) { 
-            result = result * 26 + (columnTitle.charAt(i) - 'A' + 1);
+    public int[] countBits(int n){
+
+        int[] answer =  new int[n+1];
+
+        for(int i =0 ; i<= n ; i++){
+
+            answer[i] = counter(i);
         }
 
-        return result;
+        return answer;
+    }
+
+    public int counter(int k){
+        int count = 0;
+        while(k>0){
+
+            count += (k % 2);
+            k>>= 1;
+
+        }
+
+        return count;
+    }
+}*/
+
+//solution2 : dp사용
+
+import java.util.*;
+
+class Solution{
+    public int[] countBits(int n){
+
+        int[] dp = new int[n+1];
+        dp[0] = 0;
+
+        for(int i =0 ; i<= n ; i++){
+
+            dp[i] = dp[i>>1]+(i%2);
+        }
+
+        return dp;
     }
 }
