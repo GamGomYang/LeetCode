@@ -1,15 +1,22 @@
+import java.util.*;
+
 class Solution {
-    public int climbStairs(int n) {
-        if (n == 1) return 1; 
-        if (n == 2) return 2; 
+    public int coinChange(int[] coins, int amount){
 
-        int[] result = new int[n+1];
-        result[1] = 1;
-        result[2] = 2;
+        int[] dp = new int[amount +1];
 
-        for (int i = 3; i <= n; i++) {
-            result[i] = result[i-1] + result[i-2];
+        Arrays.fill(dp, amount+1);
+
+        dp[0]=0;
+
+        for(int coin : coins){
+            for(int i =coin ; i<= amount ; i++){
+
+                dp[i] = Math.min(dp[i], dp[i-coin]+1);
+            }
         }
-        return result[n];
+
+        return dp[amount] > amount ? -1 : dp[amount];
     }
+
 }
