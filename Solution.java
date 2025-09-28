@@ -1,50 +1,15 @@
-/*
-//solution 1 :브르트 포스 -> time exceed
+class Solution {
+    public int climbStairs(int n) {
+        if (n == 1) return 1; 
+        if (n == 2) return 2; 
 
-import java.util.*;
+        int[] result = new int[n+1];
+        result[1] = 1;
+        result[2] = 2;
 
-public class solution {
-
-    public int[] countBits(int n){
-
-        int[] answer =  new int[n+1];
-
-        for(int i =0 ; i<= n ; i++){
-
-            answer[i] = counter(i);
+        for (int i = 3; i <= n; i++) {
+            result[i] = result[i-1] + result[i-2];
         }
-
-        return answer;
-    }
-
-    public int counter(int k){
-        int count = 0;
-        while(k>0){
-
-            count += (k % 2);
-            k>>= 1;
-
-        }
-
-        return count;
-    }
-}*/
-
-//solution2 : dp사용
-
-import java.util.*;
-
-class Solution{
-    public int[] countBits(int n){
-
-        int[] dp = new int[n+1];
-        dp[0] = 0;
-
-        for(int i =0 ; i<= n ; i++){
-
-            dp[i] = dp[i>>1]+(i%2);
-        }
-
-        return dp;
+        return result[n];
     }
 }
