@@ -1,22 +1,21 @@
-import java.util.*;
-
 class Solution {
-    public int coinChange(int[] coins, int amount){
+    public int coinChange(int[] coins, int amount) {
+        int[] counter = new int[amount+1];
 
-        int[] dp = new int[amount +1];
+        counter[0] = 0;
 
-        Arrays.fill(dp, amount+1);
+        for (int i = 1; i <= amount; i++) {
+            counter[i] = amount + 1; 
+        }
 
-        dp[0]=0;
-
-        for(int coin : coins){
-            for(int i =coin ; i<= amount ; i++){
-
-                dp[i] = Math.min(dp[i], dp[i-coin]+1);
+        for (int coin : coins) {
+            for (int i = coin; i <= amount; i++) {
+                counter[i] = Math.min(counter[i], counter[i - coin] + 1);
             }
         }
 
-        return dp[amount] > amount ? -1 : dp[amount];
+        return counter[amount] > amount ? -1 : counter[amount];
     }
-
 }
+
+
