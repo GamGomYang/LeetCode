@@ -1,26 +1,33 @@
-import java.util.Arrays;
+import java.util.*;
 
 class Solution {
-    public int[] productExceptSelf(int[] nums) {
+    public String largestNumber(int[] nums) {
+
+        StringBuilder sb = new StringBuilder();
+
         int length = nums.length;
-        int[] answer = new int[length];
-        
-        Arrays.fill(answer,1);
 
-        int left=1;
-        for(int i =0 ; i<length ; i++){
+        String[] num = new String[length];
 
-            answer[i] = left;
-            left *= nums[i];
-        } 
+        for(int left = 0 ; left <length -1 ; left++ ){
 
-        int right =1;
-        for(int i = length-1 ; i>=0 ; i--){
-            answer[i] *= right;
-            right *= nums[i];
+            for(int right= left +1 ; right < length ; right++){
 
+                if(num[left].charAt(0) <= num[right].charAt(0)
+                &&
+                num[left].length > num[right].length){
+                    int temp;
+                    num[left]= temp;
+                    num[left] = num[right];
+                    num[right] = temp; 
+                }
+            }
         }
-
-        return answer;
+        for(int i =0 ; i< length ; i++){
+            sb.append(Integer.toString(num[i]));
+        }
+        String result = sb.toString();
+        return result;
+        
     }
 }
