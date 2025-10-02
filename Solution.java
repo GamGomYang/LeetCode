@@ -1,33 +1,35 @@
 import java.util.*;
 
 class Solution {
-    public String largestNumber(int[] nums) {
+    public int findMaxLength(int[] nums) {
 
-        StringBuilder sb = new StringBuilder();
+        HashMap<Integer , Integer> hashmap = new HashMap<>();
 
-        int length = nums.length;
+        int count = 0;
+        int result =0;
 
-        String[] num = new String[length];
+        hashmap.put(0,-1);
 
-        for(int left = 0 ; left <length -1 ; left++ ){
-
-            for(int right= left +1 ; right < length ; right++){
-
-                if(num[left].charAt(0) <= num[right].charAt(0)
-                &&
-                num[left].length > num[right].length){
-                    int temp;
-                    num[left]= temp;
-                    num[left] = num[right];
-                    num[right] = temp; 
-                }
+        for(int i =0 ; i<nums.length ;i++){
+            
+            if(nums[i] == 0){
+                count -=1;
             }
+            else{
+                count += 1;
+            }
+
+            if(hashmap.containsKey(count)){
+                result = Math.max(result , i - hashmap.get(count));
+            }
+            else{
+                hashmap.put(count , i);
+            }
+
         }
-        for(int i =0 ; i< length ; i++){
-            sb.append(Integer.toString(num[i]));
-        }
-        String result = sb.toString();
+
         return result;
+
         
     }
 }
