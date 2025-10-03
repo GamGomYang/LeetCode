@@ -1,27 +1,53 @@
 import java.util.*;
 
 class Solution {
-    public int subarraySum(int[] nums, int k) {
-
-        HashMap<Integer , Integer> hashmap = new HashMap<>();
+    public int pivotIndex(int[] nums) {
 
         int length = nums.length;
-        hashmap.put(0,1);
-        int sum=0;
-        int result =0;
 
-        for(int i =0 ; i< length ; i ++){
+        int sum = 0;
+        int result=0;
+        
+
+        for(int i =0 ; i<length ; i++){
             sum += nums[i];
+        }
 
-            if(hashmap.containsKey(sum-k)){
-                result += hashmap.get(sum-k);
+        int left =0;
+        int right = sum;
+
+        for(int i =0 ; i< length ; i++){
+            if(left >0)
+            {
+            left += nums[i-1];}
+
+            right -= left;
+
+            System.out.println(left,right);
+            
+            if(right == left){
+                result = i;
             }
-
-            hashmap.put(sum , hashmap.getOrDefault(sum,0)+1);
-
         }
 
         return result;
         
     }
+
+    public static void main(String[] args){
+
+        Solution solution = new Solution();
+
+        int[] input =  new int[6];
+
+        input[] = (1,7,3,6,5,6);
+
+        int result = solution.pivotIndex(input);
+
+        System.out.println(result);
+
+
+    }
 }
+
+
