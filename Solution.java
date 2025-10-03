@@ -4,50 +4,40 @@ class Solution {
     public int pivotIndex(int[] nums) {
 
         int length = nums.length;
-
         int sum = 0;
-        int result=0;
-        
 
         for(int i =0 ; i<length ; i++){
             sum += nums[i];
         }
 
+        int rightSum=0;
+        int leftSum =0;
         int left =0;
-        int right = sum;
+        int cal=0;
 
-        for(int i =0 ; i< length ; i++){
-            if(left >0)
-            {
-            left += nums[i-1];}
 
-            right -= left;
+        for(int i =0 ; i<length ; i++){
+            left = i -1;
+            if(left <0 ){
+                leftSum = 0;
 
-            System.out.println(left,right);
-            
-            if(right == left){
-                result = i;
+            }else{
+                leftSum += nums[left];
+
             }
+
+            cal += nums[i];
+            rightSum = sum-cal;
+
+            System.out.println(i+" : "+leftSum+ " " + rightSum);
+
+            if(leftSum == rightSum){
+                return i;
+            }
+
+
         }
-
-        return result;
-        
+        return -1;
     }
 
-    public static void main(String[] args){
-
-        Solution solution = new Solution();
-
-        int[] input =  new int[6];
-
-        input[] = (1,7,3,6,5,6);
-
-        int result = solution.pivotIndex(input);
-
-        System.out.println(result);
-
-
-    }
 }
-
-
