@@ -12,29 +12,17 @@ class Solution {
 
         int rightSum=0;
         int leftSum =0;
-        int left =0;
-        int cal=0;
-
 
         for(int i =0 ; i<length ; i++){
-            left = i -1;
-            if(left <0 ){
-                leftSum = 0;
 
-            }else{
-                leftSum += nums[left];
-
-            }
-
-            cal += nums[i];
-            rightSum = sum-cal;
-
-            System.out.println(i+" : "+leftSum+ " " + rightSum);
-
+            rightSum = sum - leftSum - nums[i];
             if(leftSum == rightSum){
                 return i;
             }
 
+            leftSum += nums[i];
+
+            System.out.println(i+" : "+leftSum+ " " + rightSum);
 
         }
         return -1;

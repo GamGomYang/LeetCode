@@ -1,43 +1,28 @@
 import java.util.*;
 
 class Solution {
-    public int pivotIndex(int[] nums) {
+    public ListNode rotateRight(ListNode head, int k) {
+        if (head == null || head.next == null || k == 0) return head;
 
-        int length = nums.length;
-        int sum = 0;
-
-        for(int i =0 ; i<length ; i++){
-            sum += nums[i];
+        ListNode cur = head;
+        int length = 1;
+        while (cur.next != null) {
+            cur = cur.next;
+            length++;
+        }
+        cur.next = head;
+        k = k % length;
+        int stepsToNewHead = length - k;
+        
+        ListNode newTail = cur;
+        while (stepsToNewHead-- > 0) {
+            newTail = newTail.next;
         }
 
-        int rightSum=0;
-        int leftSum =0;
-        int left =0;
-        int cal=0;
+        
+        ListNode newHead = newTail.next;
+        newTail.next = null;
 
-
-        for(int i =0 ; i<length ; i++){
-            left = i -1;
-            if(left <0 ){
-                leftSum = 0;
-
-            }else{
-                leftSum += nums[left];
-
-            }
-
-            cal += nums[i];
-            rightSum = sum-cal;
-
-            System.out.println(i+" : "+leftSum+ " " + rightSum);
-
-            if(leftSum == rightSum){
-                return i;
-            }
-
-
-        }
-        return -1;
+        return newHead;
     }
-
 }
