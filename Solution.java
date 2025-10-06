@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 class Solution {
@@ -26,3 +27,37 @@ class Solution {
         return newHead;
     }
 }
+/*
+
+import java.util.*;
+
+class Solution {
+    public String decodeString(String s) {
+        Deque<String> stack = new ArrayDeque();
+        StringBuilder sb = new StringBuilder();
+
+        int length = s.length();
+        int recurse =0;
+        String st;
+
+        for(int i =0 ; i<length ; i++){
+
+            if( s.charAt(i)>='a' && s.charAt(i)<='z' ){
+                sb.append(s.charAt(i));
+            }else if( s.charAt(i)==']'){
+                stack.push(sb.toString());
+            }
+        }
+
+        String result;
+
+        while(!stack.isEmpty()){
+            sb.append(stack.pop());
+
+            result = sb.toString();
+
+        }
+
+        
+    }
+}*/
