@@ -33,9 +33,9 @@ More actions
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode1.java), [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode1.py) | Easy |
 | 2 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode121.java) | Easy |
 | 3 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode57.py) | Medium |
-| 4 | [3Sum](https://leetcode.com/problems/3sum/) | | | Medium |
+| 4 | [3Sum](https://leetcode.com/problems/3sum/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode15.java) | Medium |
 | 5 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode238.java) | Medium |
-| 6 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | | | Medium |
+| 6 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Backtraking/leetcode39.java) | Medium |
 | 7 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | | | Medium |
 | 8 | [Majority Element](https://leetcode.com/problems/majority-element/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode169.java) | Easy |
 | 9 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode75.java) | Medium |
@@ -45,14 +45,14 @@ More actions
 | 13 | [Gas Station](https://leetcode.com/problems/gas-station/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode134.java) | Medium |
 | 14 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode128.java) | Medium |
 | 15 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | | | Medium |
-| 16 | [Contiguous Array](https://leetcode.com/problems/contiguous-array/) | | | Medium |
-| 17 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | | | Medium |
+| 16 | [Contiguous Array](https://leetcode.com/problems/contiguous-array/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode525.java) | Medium |
+| 17 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode560.java) | Medium |
 | 18 | [Employee Free Time](https://leetcode.com/problems/employee-free-time/) (LeetCode Premium) | | | Hard |
 | 19 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode283.java) | Easy |
 | 20 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) (LeetCode Premium) | | | Medium |
 | 21 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | | | Hard |
 | 22 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode977.java) | Easy |
-| 23 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | | | Medium |
+| 23 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Two%20Pointer/leetcode16.java) | Medium |
 | 24 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | | | Medium |
 
 ---
@@ -61,18 +61,18 @@ More actions
 
 | 번호 | 제목                                                                                                                            | 언어                                                         | 풀이 링크                                                                        | 난이도 |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------- | ------ |
-| 1    | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                                             | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode125.java) | Easy   |
+| 1    | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                                             | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) ![Kotlin](https://img.shields.io/badge/-Kotlin-purple?logo=kotlin) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode125.java), [Kotlin](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode125.kt) | Easy   |
 | 2    | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                                                   | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Easy   |
 | 3    | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode3.java)   | Medium |
 | 4    | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)                                                         | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode409.java) | Easy   |
-| 5    | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)                                             | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Hard   |
+| 5    | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)                                             | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode76.java)  | Hard   |
 | 6    | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                               | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Medium |
-| 7    | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                                   | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode5.java)   | Medium |
+| 7    | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                                   | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode5.java), [Python](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode5.py) | Medium |
 | 8    | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)                                   | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode438.java) | Medium |
 | 9    | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                                                 | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode49.java)  | Medium |
 | 10   | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)               | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode424.java) | Medium |
 | 11   | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                                   | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode14.java)  | Easy   |
-| 12   | [Largest Number](https://leetcode.com/problems/largest-number/)                                                                 | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Medium |
+| 12   | [Largest Number](https://leetcode.com/problems/largest-number/)                                                                 | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode179.java) | Medium |
 | 13   | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) (LintCode/LC Premium)                     | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Medium |
 | 14   | [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)                                                             | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) |                                                                                  | Hard   |
 
@@ -93,35 +93,35 @@ More actions
     <td>1</td>
     <td><a href="https://leetcode.com/problems/spiral-matrix/">Spiral Matrix</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Matrix/leetcode54.java">Java</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>2</td>
     <td><a href="https://leetcode.com/problems/valid-sudoku/">Valid Sudoku</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Matrix/leetcode36.java">Java</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>3</td>
     <td><a href="https://leetcode.com/problems/rotate-image/">Rotate Image</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Matrix/leetcode48.java">Java</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>4</td>
     <td><a href="https://leetcode.com/problems/set-matrix-zeroes/">Set Matrix Zeroes</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Matrix/leetcode73.java">Java</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>5</td>
     <td><a href="https://leetcode.com/problems/sudoku-solver/">Sudoku Solver</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Matrix/leetcode37.java">Java</a></td>
     <td>Hard</td>
   </tr>
 </table>
@@ -142,7 +142,7 @@ More actions
     <td>1</td>
     <td><a href="https://leetcode.com/problems/binary-search/">Binary Search</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinarySearch/leetcode704.java">Java</a></td>
     <td>Easy</td>
   </tr>
   <tr>
@@ -156,7 +156,7 @@ More actions
     <td>3</td>
     <td><a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">Search in Rotated Sorted Array</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinarySearch/leetcode33.java">Java</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -177,7 +177,7 @@ More actions
     <td>6</td>
     <td><a href="https://leetcode.com/problems/median-of-two-sorted-arrays/">Median of Two Sorted Arrays</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode4.java">Java</a></td>
     <td>Hard</td>
   </tr>
   <tr>
@@ -373,21 +373,21 @@ More actions
     <td>1</td>
     <td><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/">Lowest Common Ancestor of a Binary Search Tree</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinaryTree/leetcode235.java">Java</a></td>
     <td>Easy</td>
   </tr>
   <tr>
     <td>2</td>
     <td><a href="https://leetcode.com/problems/validate-binary-search-tree/">Validate Binary Search Tree</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinaryTree/leetcode98.java">Java</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>3</td>
     <td><a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst/">Kth Smallest Element in a BST</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinaryTree/leetcode230.java">Java</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -401,7 +401,7 @@ More actions
     <td>5</td>
     <td><a href="https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/">Convert Sorted Array to Binary Search Tree</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinaryTree/leetcode108.java">Java</a></td>
     <td>Easy</td>
   </tr>
 </table>
@@ -422,14 +422,14 @@ More actions
     <td>1</td>
     <td><a href="https://leetcode.com/problems/invert-binary-tree/">Invert Binary Tree</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinaryTree/leetcode226.java">Java</a></td>
     <td>Easy</td>
   </tr>
   <tr>
     <td>2</td>
     <td><a href="https://leetcode.com/problems/balanced-binary-tree/">Balanced Binary Tree</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinaryTree/leetcode110.java">Java</a></td>
     <td>Easy</td>
   </tr>
   <tr>
@@ -625,7 +625,7 @@ More actions
     <td>5</td>
     <td><a href="https://leetcode.com/problems/generate-parentheses/">Generate Parentheses</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Backtraking/leetcode22.java">Java</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -653,7 +653,7 @@ More actions
     <td>1</td>
     <td><a href="https://leetcode.com/problems/merge-two-sorted-lists/">Merge Two Sorted Lists</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/LinkedList/leetcode21.java">Java</a></td>
     <td>Easy</td>
   </tr>
   <tr>
@@ -695,14 +695,14 @@ More actions
     <td>7</td>
     <td><a href="https://leetcode.com/problems/swap-nodes-in-pairs/">Swap Nodes in Pairs</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/LinkedList/leetcode24.java">Java</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>8</td>
     <td><a href="https://leetcode.com/problems/odd-even-linked-list/">Odd Even Linked List</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/LinkedList/leetcode328.java">Java</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -716,14 +716,14 @@ More actions
     <td>10</td>
     <td><a href="https://leetcode.com/problems/sort-list/">Sort List</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/LinkedList/leetcode148.java">Java</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>11</td>
     <td><a href="https://leetcode.com/problems/palindrome-linked-list/">Palindrome Linked List</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/LinkedList/leetcode234.java">Java</a></td>
     <td>Easy</td>
   </tr>
   <tr>
@@ -765,35 +765,35 @@ More actions
     <td>1</td>
     <td><a href="https://leetcode.com/problems/valid-parentheses/">Valid Parentheses</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode20.java">Java</a></td>
     <td>Easy</td>
   </tr>
   <tr>
     <td>2</td>
     <td><a href="https://leetcode.com/problems/implement-queue-using-stacks/">Implement Queue using Stacks</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Stack/leetcode232.java">Java</a></td>
     <td>Easy</td>
   </tr>
   <tr>
     <td>3</td>
     <td><a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/">Evaluate Reverse Polish Notation</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Stack/leetcode150.java">Java</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>4</td>
     <td><a href="https://leetcode.com/problems/min-stack/">Min Stack</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Stack/leetcode155.java">Java</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>5</td>
     <td><a href="https://leetcode.com/problems/trapping-rain-water/">Trapping Rain Water</a></td>
-    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Two%20Pointer/leetcode42.py">Python</a></td>
     <td>Hard</td>
   </tr>
   <tr>
@@ -821,7 +821,7 @@ More actions
     <td>9</td>
     <td><a href="https://leetcode.com/problems/backspace-string-compare/">Backspace String Compare</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Stack/leetcode844.java">Java</a></td>
     <td>Easy</td>
   </tr>
   <tr>
@@ -1017,14 +1017,14 @@ More actions
     <td>2</td>
     <td><a href="https://leetcode.com/problems/coin-change/">Coin Change</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/DynamicProgramming/leetcode322.java">Java</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>3</td>
     <td><a href="https://leetcode.com/problems/climbing-stairs/">Climbing Stairs</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/DynamicProgramming/leetcode70.java">Java</a></td>
     <td>Easy</td>
   </tr>
   <tr>
@@ -1108,21 +1108,21 @@ More actions
     <td>1</td>
     <td><a href="https://leetcode.com/problems/add-binary/">Add Binary</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Binary/leetcode67.java">Java</a></td>
     <td>Easy</td>
   </tr>
   <tr>
     <td>2</td>
     <td><a href="https://leetcode.com/problems/find-the-duplicate-number/">Find the Duplicate Number</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Binary/leetcode287.java">Java</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>3</td>
     <td><a href="https://leetcode.com/problems/counting-bits/">Counting Bits</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/DynamicProgramming/leetcode338.java">Java</a></td>
     <td>Easy</td>
   </tr>
   <tr>
@@ -1171,7 +1171,7 @@ More actions
     <td>1</td>
     <td><a href="https://leetcode.com/problems/roman-to-integer/">Roman to Integer</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Math/leetcode13.java">Java</a></td>
     <td>Easy</td>
   </tr>
   <tr>
@@ -1192,14 +1192,14 @@ More actions
     <td>4</td>
     <td><a href="https://leetcode.com/problems/reverse-integer/">Reverse Integer</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Math/leetcode7.java">Java</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>5</td>
     <td><a href="https://leetcode.com/problems/palindrome-number/">Palindrome Number</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/String/Leetcode9.java">Java</a></td>
     <td>Easy</td>
   </tr>
 </table>
