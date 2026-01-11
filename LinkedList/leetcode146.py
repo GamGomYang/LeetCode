@@ -5,7 +5,6 @@ class Node:
         self.prev = None
         self.next = None
 
-
 class LRUCache:
 
     def __init__(self, capacity: int):
@@ -17,13 +16,11 @@ class LRUCache:
         self.head.next = self.tail
         self.tail.prev = self.head
 
-
     def _remove(self, node: Node):
         prev = node.prev
         nxt = node.next
         prev.next = nxt
         nxt.prev = prev
-
 
     def _add_to_front(self, node: Node):
         node.prev = self.head
