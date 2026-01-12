@@ -20,13 +20,12 @@ class Solution:
         left = head
         prev = None
         cur = right
-        
         while cur:
             nxt = cur.next
             cur.next = prev
             prev = cur
             cur = nxt
-
+            
         right = prev
 
         while left and right:
