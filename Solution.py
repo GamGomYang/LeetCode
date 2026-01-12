@@ -4,43 +4,26 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def reorderList(self, head: Optional[ListNode]) -> None:
-        """
-        Do not return anything, modify head in-place instead.
-        """
+    def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
         
-        slow = head 
-        fast = head.next
-
-        while fast and fast.next:
-            slow = slow.next
-            fast = fast.next.next
-
-        
-        right = slow.next
-        left = head
-        slow.next = None
-
-        prev = None
-        cur = right 
-
-        while cur:
-            nxt = cur.next
-            cur.next = prev
-            prev = cur 
-            cur = nxt
-
-        right = prev
+        if not head or head.next or k == 0 :
+            return head
         
 
-        while right:
-            nxt_1 = left.next
-            nxt_2 = right.next
-            left.next = right
-            left = nxt_1
-            right.next = left 
-            right = nxt_2
+        for _ in range(k):
+            prev = None
+            tail =head
+            
+            while tail.next:
+                tail= tail.next
+                prev = prev.next
+
+            tail.next = cur
+            prev.next = None
+
+    
+        return head
+
+            
 
         
-
-
