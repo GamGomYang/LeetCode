@@ -4,39 +4,43 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def isPalindrome(self, head: Optional[ListNode]) -> bool:
-
-        if not head :
-            return False
+    def reorderList(self, head: Optional[ListNode]) -> None:
+        """
+        Do not return anything, modify head in-place instead.
+        """
         
-        slow =head
+        slow = head 
         fast = head.next
 
-        while fast and fast.next :
+        while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
 
+        
         right = slow.next
         left = head
+        slow.next = None
+
         prev = None
-        cur = right
-        
+        cur = right 
+
         while cur:
             nxt = cur.next
             cur.next = prev
-            prev = cur
+            prev = cur 
             cur = nxt
 
         right = prev
+        
 
-        while left and right:
-            if left.val == right.val:
-                 
-                left = left.next
-                right = right.next
-                
-            else:
-                return False
+        while right:
+            nxt_1 = left.next
+            nxt_2 = right.next
+            left.next = right
+            left = nxt_1
+            right.next = left 
+            right = nxt_2
+
         
-        return True
-        
+
+
