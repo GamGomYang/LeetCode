@@ -1,34 +1,31 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+from collections import deque
+from typing import List
+
 class Solution:
-    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-        dummy = ListNode(0)
-        curr = dummy
-        while list1 and list2:
+    def updateMatrix(self, mat: List[List[int]]) -> List[List[int]]:
+        m, n = len(mat) , len(mat[0])
 
+        dist = [[-1]*m for _  in range(n)]
 
-            if list1.val >= list2.val:
-                nxt_2 = list2.next
-                curr.next = list2
-                list2 = nxt_2
-                curr = curr.next
-            else:
-                nxt_1 = list1.next
-                curr.next = list1                
-                list1 = nxt_1
-                curr = curr.next
+        q = deque()
 
-        if list1 :
-            curr.next = list1
+        for i in range(m):
+            for j in range(n):
+                if mat[i][j] == 0 :
+                    dist[i][j] = 0
+                    q.append((i,j))
 
-        if list2 :
-            curr.next = list2
+        directions = [(0,1) , (1,0) , (0,-1), (-1,0)]
 
-        return dummy.next
+        while q :
+            x,y = q.popleft()
+            for dx, dy in directions:
+                nx, ny = x + dx , y + dy
 
-            
+                if 0 <= dx < m and 0 <= ny < n:
 
-                
+                    if dist[dx][dy] == -1:
+                        dist[dx][dy] = dist[x][y]+1
+                        q.append((nx,ny))
+
+        return dist
