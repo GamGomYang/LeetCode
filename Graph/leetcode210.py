@@ -7,6 +7,7 @@ class Solution:
             graph[b].append(a)
 
         result = []
+
         
         state = [0]*numCourses
 
@@ -23,15 +24,16 @@ class Solution:
                     return False
             
             state[course] = 2
+            result.append(course)
 
             return True
         
         for i in range(numCourses):
-            if not dfs(i):
-                return []
-            result.append(i)
+            if state[i] == 0:
+                if not dfs(i):
+                    return []
         
-        return result
+        return result[::-1]
 
 
 
