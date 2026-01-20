@@ -1,68 +1,34 @@
-from collections import deque
-from typing import List
-
 class Solution:
-    def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
-        if not heights or not heights[0]:
-            return []
-        
-        directions = [(0,1),(0,-1),(1,0),(-1,0)]
-        
-        m = len(heights)
-        n = len(heights[0])
+    def decodeString(self, s: str) -> str:
+        stack = []              # (이전 문자열, 반복 횟수)
+        current_str = ""        # 지금 만들고 있는 문자열
+        current_num = 0         # 바로 앞에서 읽은 숫자 (k)
 
-        pacific = [[False] * n for _ in range(m)]
-        atlantic = [[False] * n for _ in range(m)]
+        for ch in s:
+            # 숫자 처리 (여러 자리 수 가능)
+            if ch.isdigit():
+                current_num = current_num * 10 + int(ch)
 
-        result = []
+            # '[' : 현재 상태를 스택에 저장
+            elif ch == '[':
+                # 불변식:
+                # '['를 만나는 순간,
+                # current_str 은 "이전 레벨 문자열"
+                # current_num 은 그 문자열에 적용될 반복 횟수
+                stack.append((current_str, current_num))
+                current_str = ""    # 새 레벨 문자열 시작
+                current_num = 0
 
-        def bfs(starts, visited):
-            queue = deque(starts)
+            # ']' : 스택에서 이전 상태 복원
+            elif ch == ']':
+                prev_str, num = stack.pop()
+                # 불변식:
+                # current_str 은 괄호 안 문자열
+                # prev_str + current_str * num 이 새로운 문자열
+                current_str = prev_str + current_str * num
 
-            for r, c in starts:
-                visited[r][c] = True
+            # 일반 문자
+            else:
+                current_str += ch
 
-            while queue:
-                r, c = queue.popleft()
-
-                for nx , ny in directions:
-                    dx , dy = r+nx , c +ny
-
-                    if dx < 0 or dx >= m or dy < 0 or dy>= n:
-                        continue
-                    if visited[dx][dy] :
-                        continue
-                    if heights[dx][dy] < heights[r][c]:
-                        continue
-
-                    visited[dx][dy] = True
-                    queue.append((dx,dy))
-
-        pacific_starts = []
-        for c in range(n):
-            pacific_starts.append((0,c))
-        for r in range(m):
-            pacific_starts.append((r,0))
-
-        atlantic_starts = []
-        for c in range(n):
-            atlantic_starts.append((m-1, c))
-
-        for r in range(m):
-            atlantic_starts.append((r,n-1))
-
-        
-        bfs(pacific_starts , pacific)
-
-        bfs(atlantic_starts , atlantic)
-
-        for r in range(m):
-            for c in range(n):
-                if pacific[r][c] and atlantic[r][c]:
-                    result.append((r,c))
-
-        
-        return result
-                
-
-
+        return current_str
