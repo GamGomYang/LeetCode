@@ -82,7 +82,42 @@ class Solution:
 
         return current_str           
 
-        
+
+#3 01matrix       
+
+from collections import deque
+from typing import List
+
+# 왜 0 에서 시작할까? - 0이 결국 정답이기 때문 정답을 알면 해를 찾기까지는 쉽다
+# 만약에 정답을 모르면 일일히 searching
+# 답이 이미 확정된 0에서 시작해 BFS로 거리를 전파하는 것이 가장 효율적입니다
+
+class Solution:
+    def updateMatrix(self, mat: List[List[int]]) -> List[List[int]]:
+        ROW , COL = len(mat) , len(mat[0])
+
+        result = [[-1] * COL for _ in range(ROW)]
+
+        queue = deque()
+
+        directions = [(0,1), (1,0) , (0,-1), (-1,0)]
+
+        for i in range(ROW):
+            for j in range(COL):
+                if mat[i][j] == 0:
+                    result[i][j] = 0
+                    queue.append((i,j))
+
+        while queue:
+            r , c = queue.popleft()
+            for dr , dc  in directions:
+                nr = r+dr
+                nc = c+dc
+                if 0<=nr<ROW and 0<=nc<COL and result[nr][nc] ==-1:
+                    result[nr][nc] = result[r][c]+1
+                    queue.append((nr,nc)) 
+
+        return result
 
 '''
         
