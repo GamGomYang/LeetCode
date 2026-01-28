@@ -1,32 +1,28 @@
+from collections import defaultdict
+import heapq
+
 class Solution:
-    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+    def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
+        graph = defaultdict(list)
 
+        for u, v, w in times:
+            graph[u].append((v,w))
 
-        graph = [[] for _ in range(numCourses)]
+        queue = []
 
-        for a,b in prerequisites:
-            graph[b].append(a)
+        dist = defaultdict(int)
 
-        state = [0] * numCourses
+        heapq.heappush(queue,(0,k))
 
+        while queue:
+            time, node = heapq.heappop(queue)
+            if node not in dist:
+                dist[node] = time
+                for v, w in graph[node]:
+                    alt = time + w
+                    heapq.heappush(queue,(alt, v))
 
-        def dfs(course):
-            if state[course] == 1:
-                return False
-            if state [course] == 2:
-                return True
-            
-            state[course] = 1
-
-            for nxt in graph[course]:
-                if not dfs(nxt):
-                    return False
-                
-            state[course] = 2
-            return True
-
-        for i in range(numCourses):
-            if not dfs(i):
-                return False
-
-        return True    
+        if len(dist) == n :
+            return max(dist.values())
+        
+        return -1
