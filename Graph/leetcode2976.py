@@ -10,7 +10,7 @@ class Solution:
         for o, c, w in zip(original, changed, cost):
             graph[o].append((c, w))
 
-        INF = 10**18
+        INF = float("inf")
         dist = [[INF]*26 for _ in range(26)]
 
         for i in range(26):
