@@ -1,6 +1,15 @@
 from collections import defaultdict
 import heapq
 
+'''
+Input: source = "abcd",
+target = "acbe",
+original = ["a","b","c","c","e","d"], 
+changed = ["b","c","b","e","b","e"], 
+cost = [2,5,5,1,2,20]
+Output: 28
+'''
+
 class Solution:
     def minimumCost(self, source: str, target: str,
                     original: list[str], changed: list[str],
