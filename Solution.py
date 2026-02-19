@@ -5,29 +5,30 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def generateTrees(self, n: int) -> List[Optional[TreeNode]]:
-        
-        if n == 0 :
-            return []
-        
-        
-        def tree(start , end):
-            if start > end :
-                return [None]
+    def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
+        result = []
+        right_path = []
+        left_path = []
+
+        def dfs_right(node):
+            if node is None:
+                return
             
-            result = []
+            right_path.append(node.val)
+            dfs_right(node.right , right_path)
+            dfs_right(node.left,right_path)
 
-            for val in range(start , end+1):
-                left_tree = tree(start , val-1 )
-                right_tree = tree(val+1 , end)
 
-                for left in left_tree:
-                    for right in right_tree:
-                        root = TreeNode(val)
-                        root.left = left
-                        root.right = right
-                        result.append(root)
+        def dfs_left(node):
+            if node is None:
+                return
+            
+            left_path.append(node.val)
+            dfs_left(node.right, left_path)
+            dfs_left(node.left,left_path)
 
-            return result
-        
-        return tree(1,n)
+
+        dfs_left(root, left_path)
+        dfs_right(root, right_path)
+
+        return [left_path , right_path]
