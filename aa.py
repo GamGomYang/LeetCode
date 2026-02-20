@@ -80,6 +80,4 @@ def solution(expressions):
         else:
             result_value = "?"
         
-        answer.append(f"{A} {op} {B} = {result_value}")
-    
     return answer
