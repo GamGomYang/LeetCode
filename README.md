@@ -44,9 +44,9 @@ More actions
 | 12 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) (LeetCode Premium) | | | Easy |
 | 13 | [Gas Station](https://leetcode.com/problems/gas-station/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode134.java) | Medium |
 | 14 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode128.java) | Medium |
-| 15 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | | | Medium |
+| 15 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | | [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode189.py) | Medium |
 | 16 | [Contiguous Array](https://leetcode.com/problems/contiguous-array/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode525.java), [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode525.py) | Medium |
-| 17 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode560.java) | Medium |
+| 17 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode560.java), [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode560.py) | Medium |
 | 18 | [Employee Free Time](https://leetcode.com/problems/employee-free-time/) (LeetCode Premium) | | | Hard |
 | 19 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode283.java) | Easy |
 | 20 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) (LeetCode Premium) | | | Medium |
@@ -156,14 +156,14 @@ More actions
     <td>3</td>
     <td><a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">Search in Rotated Sorted Array</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinarySearch/leetcode33.java">Java</a></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinarySearch/leetcode33.java">Java</a>, <a href="https://github.com/GamGomYang/LeetCode/blob/main/BinarySearch/leetcode33.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>4</td>
     <td><a href="https://leetcode.com/problems/time-based-key-value-store/">Time Based Key-Value Store</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinarySearch/leetcode981.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -177,21 +177,21 @@ More actions
     <td>6</td>
     <td><a href="https://leetcode.com/problems/median-of-two-sorted-arrays/">Median of Two Sorted Arrays</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode4.java">Java</a></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode4.java">Java</a>, <a href="https://github.com/GamGomYang/LeetCode/blob/main/BinarySearch/leetcode4.py">Python</a></td>
     <td>Hard</td>
   </tr>
   <tr>
     <td>7</td>
     <td><a href="https://leetcode.com/problems/search-a-2d-matrix/">Search a 2D Matrix</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinarySearch/leetcode74.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>8</td>
     <td><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">Find Minimum in Rotated Sorted Array</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinarySearch/leetcode153.py">Python</a></td>
     <td>Medium</td>
   </tr>
 </table>
@@ -212,14 +212,14 @@ More actions
     <td>1</td>
     <td><a href="https://leetcode.com/problems/flood-fill/">Flood Fill</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode733.py">Python</a></td>
     <td>Easy</td>
   </tr>
   <tr>
     <td>2</td>
     <td><a href="https://leetcode.com/problems/01-matrix/">01 Matrix</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode542.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -233,7 +233,7 @@ More actions
     <td>4</td>
     <td><a href="https://leetcode.com/problems/course-schedule/">Course Schedule</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode207.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -247,42 +247,42 @@ More actions
     <td>6</td>
     <td><a href="https://leetcode.com/problems/rotting-oranges/">Rotting Oranges</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode994.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>7</td>
     <td><a href="https://leetcode.com/problems/accounts-merge/">Accounts Merge</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode721.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>8</td>
     <td><a href="https://leetcode.com/problems/word-ladder/">Word Ladder</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode127.py">Python</a></td>
     <td>Hard</td>
   </tr>
   <tr>
     <td>9</td>
     <td><a href="https://leetcode.com/problems/word-search/">Word Search</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode79.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>10</td>
     <td><a href="https://leetcode.com/problems/minimum-height-trees/">Minimum Height Trees</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode310.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>11</td>
     <td><a href="https://leetcode.com/problems/pacific-atlantic-water-flow/">Pacific Atlantic Water Flow</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode417.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -303,7 +303,7 @@ More actions
     <td>14</td>
     <td><a href="https://leetcode.com/problems/course-schedule-ii/">Course Schedule II</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode210.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -324,7 +324,7 @@ More actions
     <td>17</td>
     <td><a href="https://leetcode.com/problems/longest-increasing-path-in-a-matrix/">Longest Increasing Path in a Matrix</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode329.py">Python</a></td>
     <td>Hard</td>
   </tr>
   <tr>
@@ -352,7 +352,7 @@ More actions
     <td>21</td>
     <td><a href="https://leetcode.com/problems/cheapest-flights-within-k-stops/">Cheapest Flights Within K Stops</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode787.py">Python</a></td>
     <td>Medium</td>
   </tr>
 </table>
@@ -436,7 +436,7 @@ More actions
     <td>3</td>
     <td><a href="https://leetcode.com/problems/binary-tree-level-order-traversal/">Binary Tree Level Order Traversal</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinaryTree/leetcode102.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -457,7 +457,7 @@ More actions
     <td>6</td>
     <td><a href="https://leetcode.com/problems/diameter-of-binary-tree/">Diameter of Binary Tree</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinaryTree/leetcode543.py">Python</a></td>
     <td>Easy</td>
   </tr>
   <tr>
@@ -471,7 +471,7 @@ More actions
     <td>8</td>
     <td><a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/">Maximum Depth of Binary Tree</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinaryTree/leetcode104.py">Python</a></td>
     <td>Easy</td>
   </tr>
   <tr>
@@ -492,7 +492,7 @@ More actions
     <td>11</td>
     <td><a href="https://leetcode.com/problems/path-sum-ii/">Path Sum II</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinaryTree/leetcode113.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -506,7 +506,7 @@ More actions
     <td>13</td>
     <td><a href="https://leetcode.com/problems/same-tree/">Same Tree</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinaryTree/leetcode100.py">Python</a></td>
     <td>Easy</td>
   </tr>
   <tr>
@@ -527,7 +527,7 @@ More actions
     <td>16</td>
     <td><a href="https://leetcode.com/problems/symmetric-tree/">Symmetric Tree</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinaryTree/leetcode101.py">Python</a></td>
     <td>Easy</td>
   </tr>
   <tr>
@@ -653,7 +653,7 @@ More actions
     <td>1</td>
     <td><a href="https://leetcode.com/problems/merge-two-sorted-lists/">Merge Two Sorted Lists</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/LinkedList/leetcode21.java">Java</a></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/LinkedList/leetcode21.java">Java</a>, <a href="https://github.com/GamGomYang/LeetCode/blob/main/LinkedList/leetcode21.py">Python</a></td>
     <td>Easy</td>
   </tr>
   <tr>
@@ -737,7 +737,7 @@ More actions
     <td>13</td>
     <td><a href="https://leetcode.com/problems/rotate-list/">Rotate List</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/LinkedList/leetcode61.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -835,14 +835,14 @@ More actions
     <td>11</td>
     <td><a href="https://leetcode.com/problems/decode-string/">Decode String</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Stack/leetcode394.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>12</td>
     <td><a href="https://leetcode.com/problems/asteroid-collision/">Asteroid Collision</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Stack/leetcode735.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -898,7 +898,7 @@ More actions
     <td>1</td>
     <td><a href="https://leetcode.com/problems/k-closest-points-to-origin/">K Closest Points to Origin</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Heap/leetcode973.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -919,14 +919,14 @@ More actions
     <td>4</td>
     <td><a href="https://leetcode.com/problems/task-scheduler/">Task Scheduler</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Heap/leetcode621.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>5</td>
     <td><a href="https://leetcode.com/problems/top-k-frequent-words/">Top K Frequent Words</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Heap/leetcode692.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -940,7 +940,7 @@ More actions
     <td>7</td>
     <td><a href="https://leetcode.com/problems/kth-largest-element-in-an-array/">Kth Largest Element in an Array</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Heap/leetcode215.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -1031,14 +1031,14 @@ More actions
     <td>4</td>
     <td><a href="https://leetcode.com/problems/partition-equal-subset-sum/">Partition Equal Subset Sum</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/DynamicProgramming/leetcode416.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>5</td>
     <td><a href="https://leetcode.com/problems/unique-paths/">Unique Paths</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/DynamicProgramming/leetcode62.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -1129,7 +1129,7 @@ More actions
     <td>4</td>
     <td><a href="https://leetcode.com/problems/number-of-1-bits/">Number of 1 Bits</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Math/leetcode191.py">Python</a></td>
     <td>Easy</td>
   </tr>
   <tr>
@@ -1150,7 +1150,7 @@ More actions
     <td>7</td>
     <td><a href="https://leetcode.com/problems/reverse-bits/">Reverse Bits</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
-    <td></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Math/leetcode190.py">Python</a></td>
     <td>Easy</td>
   </tr>
 </table>
