@@ -1,25 +1,34 @@
+from collections import defaultdict
+import heapq
+
 class Solution:
-    def minOperations(self, s: str) -> int:
+    def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
         
-        start0 = 0
-        start1 = 0
+        graph = defaultdict()
+
+        for u,v,w in times:
+            graph[u].append((v,w))
+
+        queue = []
+
+        heapq.heappush(queue,(0,k))
+        dest = defaultdict(int)
+
+
+        while queue:
+            time, node = heapq.heappop(queue)
+
+            if node not in dest:
+                dest[node]= time
+
+                for v,w in graph[node]:
+                    alt = time +w
+                    heapq.heappush(queue,(alt,v))
+
+        if len(dest) == n:
+            return max(dest.values())
+        else :
+            return -1
+
+
         
-
-        for i in range(len(s)):
-            if i % 2 == 0:
-                if s[i] == "0":
-                    start1 += 1
-                else :
-                    start0 +=1
-            
-            else:
-                if s[i] == "1":
-                    start1 += 1
-                else:
-                    start0 +=1
-
-        return min(start0, start1)
-
-
-
-            
