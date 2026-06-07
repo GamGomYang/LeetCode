@@ -1,21 +1,31 @@
 class Solution:
-    def findCircleNum(self, isConnected: List[List[int]]) -> int:
-        number = len(isConnected)
-        visited = [False] * number
-        answer =0 
+    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
 
-        def dfs(v):
-            visited[v] = True
-            for neighbor in range(number):
-                if isConnected[v][neighbor] == 1 and visited[neighbor] == False:
-                    dfs(neighbor)
+        graph = [[] for _ in range(numCourses)]
+
+
+        for course , pre in prerequisites:
+            graph[pre].append(course)
+
+            state = [0] * numCourses
+
+            def dfs(course):
+                if state[course] == 1:
+                    return False
+                
+                if state[course] == 2:
+                    return True
+                
+                state[course] =1
+
+                for next_course in graph[course]:
+                    if not dfs(next_course):
+                        return False
                     
-        for i in range(number):
-            if not visited[i]:
-                dfs(i)
+                state[course] = 2
 
-                answer +=1
-
-        return answer
-
-
+            for course in range(numCourses):
+                if not dfs(course):
+                    return False
+                
+            return True
