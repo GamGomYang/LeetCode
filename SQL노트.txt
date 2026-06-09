@@ -2,5 +2,14 @@
 
 2. 인자 선언 DECLARE 
     예시 : DECLARE M INT ; 
-           M = N-1 ;
-    이렇게 해야함
+           SET M = N-1 ;
+    이렇게 해야함 
+    but DECLARE 해보니까 그냥 SET하는거보다 시간이 오래걸림   
+
+3. 윈도우 함수 LAG - 이전을 보세용 함수
+       사용법 : LAG(num) OVER (ORDER BY id)
+       - 지금 num의 1칸전을 봐라
+       - LAG(num , 2) : 2칸전을 봐라
+
+       * 반대되는 윈도우 함수 LAED()
+       - 다음 행 값을 가져온다
