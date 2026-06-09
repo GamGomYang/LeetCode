@@ -5,3 +5,6 @@ SELECT d.name AS Department ,
  WHERE d.id = e.departmentId 
  AND e.salary = ( SELECT MAX(salary) FROM Employee e2
  WHERE e2.departmentId = e.departmentId);
+
+
+

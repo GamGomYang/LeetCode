@@ -13,3 +13,8 @@
 
        * 반대되는 윈도우 함수 LAED()
        - 다음 행 값을 가져온다
+
+4. 상관 서브쿼리 - 안쪽쿼리가 바깥쪽 쿼리 참조
+       - WHERE e2.departmentId = e.departmentId
+       - e2 작동할때 마다 바깥 e 테이블 참조
+       
