@@ -1,0 +1,6 @@
+1. LIMIT M , 1 과 LIMIT 1 OFFSET M 은 같은 의미임
+
+2. 인자 선언 DECLARE 
+    예시 : DECLARE M INT ; 
+           M = N-1 ;
+    이렇게 해야함
