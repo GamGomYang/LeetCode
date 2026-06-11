@@ -17,4 +17,13 @@
 4. 상관 서브쿼리 - 안쪽쿼리가 바깥쪽 쿼리 참조
        - WHERE e2.departmentId = e.departmentId
        - e2 작동할때 마다 바깥 e 테이블 참조
+
+5. <> - not equal
+       - <> 은 같지 않다의 의미
+       - (case when 상태코드 <> 'zzz' else 상태코드 end)
+       - 상태코드가 'zzz' 와 같지 않다면 으로 해석
        
+6. 스칼라 서브쿼리(select) 는 인라인 뷰 (from)
+   와는 다르게 null을 반환한다
+
+7. JOIN 시 null 반영 스킬 - outer join을 활용하자
