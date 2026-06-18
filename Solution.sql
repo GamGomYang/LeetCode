@@ -110,3 +110,12 @@ FROM (
 LEFT JOIN Activity a2
   ON a1.player_id = a2.player_id
  AND DATE_ADD(a1.first_date, INTERVAL 1 DAY) = a2.event_date;
+
+
+ SELECT e.name ,
+       b.bonus 
+ FROM Employee e
+  LEFT JOIN Bonus b 
+    ON e.empId = b.empId
+WHERE b.bonus IS NULL 
+OR b.bonus < 1000

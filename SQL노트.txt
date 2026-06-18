@@ -27,3 +27,7 @@
    와는 다르게 null을 반환한다
 
 7. JOIN 시 null 반영 스킬 - outer join을 활용하자
+
+8. ALIAS 쓰는게 그냥 name 쓰는거보다 더빠르다 
+       - where 절에 b.name 이 그냥 name 쓴거보다 더 빠름
+       
