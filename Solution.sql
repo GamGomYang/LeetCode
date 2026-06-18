@@ -119,3 +119,19 @@ LEFT JOIN Activity a2
     ON e.empId = b.empId
 WHERE b.bonus IS NULL 
 OR b.bonus < 1000
+
+SELECT e1.name 
+FROM Employee e1 , 
+(SELECT e2.id , COUNT(e2.id) AS count
+FROM Employee e2 
+WHERE count > 5) e2
+WHERE e1.id = e2.id; 
+
+SELECT e1.name 
+FROM Employee e1
+JOIN
+(SELECT managerId 
+FROM Employee
+GROUP BY managerId  
+HAVING COUNT(*) >= 5) e2
+ON e1.id = e2.managerId
