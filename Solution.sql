@@ -135,3 +135,9 @@ FROM Employee
 GROUP BY managerId  
 HAVING COUNT(*) >= 5) e2
 ON e1.id = e2.managerId
+
+
+SELECT name 
+FROM Customer
+WHERE referee_id IS NULL 
+OR referee_id <> 2
