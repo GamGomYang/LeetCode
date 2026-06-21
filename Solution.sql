@@ -157,3 +157,9 @@ AND
   GROUP BY lat , lon
   HAVING COUNT(*) = 1
 )
+
+SELECT customer_number
+FROM Orders
+GROUP BY customer_number
+ORDER BY COUNT(*) DESC
+LIMIT 1
