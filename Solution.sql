@@ -136,7 +136,6 @@ GROUP BY managerId
 HAVING COUNT(*) >= 5) e2
 ON e1.id = e2.managerId
 
-
 SELECT name 
 FROM Customer
 WHERE referee_id IS NULL 
@@ -163,3 +162,10 @@ FROM Orders
 GROUP BY customer_number
 ORDER BY COUNT(*) DESC
 LIMIT 1
+
+
+SELECT name, population, area
+FROM World
+WHERE population >= 25000000
+   OR area >= 3000000;
+
