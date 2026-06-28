@@ -169,3 +169,9 @@ FROM World
 WHERE population >= 25000000
    OR area >= 3000000;
 
+
+SELECT class
+FROM Courses
+GROUP BY class
+HAVING COUNT(*) >= 5
+
