@@ -31,3 +31,13 @@
 8. ALIAS 쓰는게 그냥 name 쓰는거보다 더빠르다 
        - where 절에 b.name 이 그냥 name 쓴거보다 더 빠름
        
+
+10. SQL에서의 if else - CASE WHEN THEN END문
+    SELECT
+    id,
+       CASE
+        WHEN p_id IS NULL THEN 'Root'
+        WHEN id IN (SELECT p_id FROM Tree) THEN 'Inner'
+        ELSE 'Leaf'
+       END AS type
+     FROM Tree;

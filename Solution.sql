@@ -183,3 +183,96 @@ FROM(
 GROUP BY ID
 ORDER BY num DESC
 LIMIT 1;
+
+SELECT id , COUNT(*) AS num
+FROM (SELECT requester_id AS id 
+FROM RequestAccepted
+UNION ALL 
+SELECT accepter_id AS id
+FROM RequestAccepted 
+) t
+GROUP BY id
+ORDER BY num DESC
+LIMIT 1;
+
+SELECT name
+FROM SalesPerson
+WHERE sales_id NOT IN (
+    SELECT sales_id
+    FROM Orders
+    WHERE com_id = 1
+);
+
+SELECT s.name
+FROM SalesPerson s
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM Orders o
+    WHERE o.sales_id = s.sales_id
+      AND o.com_id = 1
+);
+
+SELECT s.name
+FROM SalesPerson s
+WHERE NOT EXISTS(
+  SELECT *
+  FROM Orders o
+  WHERE o.sales_id = s.sales_id
+  AND o.com_id = 1
+)
+
+
+SELECT s.name
+FROM SalesPerson s
+WHERE NOT EXISTS(
+  SELECT * 
+  FROM Orders o 
+  WHERE o.sales_id = s.sales_id
+  AND o.com_id =1 
+)
+
+SELECT s.name
+FROM SalesPerson s
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM Orders o
+    JOIN Company c
+      ON o.com_id = c.com_id
+    WHERE o.sales_id = s.sales_id
+      AND c.name = 'RED'
+);
+
+
+SELECT
+    id,
+    CASE
+        WHEN p_id IS NULL THEN 'Root'
+        WHEN id IN (SELECT p_id FROM Tree WHERE p_id IS NOT NULL) THEN 'Inner'
+        ELSE 'Leaf'
+    END AS type
+FROM Tree;
+
+
+SELECT
+    t1.id,
+    CASE
+        WHEN t1.p_id IS NULL THEN 'Root'
+        WHEN EXISTS (
+            SELECT 1
+            FROM Tree t2
+            WHERE t2.p_id = t1.id
+        ) THEN 'Inner'
+        ELSE 'Leaf'
+    END AS type
+FROM Tree t1;
+
+
+SELECT id,
+      CASE 
+          WHEN p_id IS NULL THEN 'Root'
+          WHEN id IN (SELECT p_id FROM Tree 
+                      WHERE p_id IS NOT NULL)
+                      THEN 'Inner'
+          ELSE 'Leaf' 
+        END AS type
+FROM tree
