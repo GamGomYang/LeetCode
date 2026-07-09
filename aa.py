@@ -83,23 +83,48 @@
 #     return answer
 
 
+# class Solution:
+#     def combinationSum(self, candidates, target):
+#         candidates.sort()
+#         result = []
+
+#         def dfs(start, total, path):
+#             if total == target:
+#                 result.append(path[:])
+#                 return
+
+#             if total > target:
+#                 return
+
+#             for i in range(start, len(candidates)):
+#                 path.append(candidates[i])
+#                 dfs(i, total + candidates[i], path)
+#                 path.pop()
+
+#         dfs(0, 0, [])
+#         return result
+
+
+
+
+from typing import List
+
 class Solution:
-    def combinationSum(self, candidates, target):
-        candidates.sort()
-        result = []
+    def combinationSum3(self, k: int, n: int) -> List[List[int]]:
+        res = []
 
-        def dfs(start, total, path):
-            if total == target:
-                result.append(path[:])
+        def backtrack(start, path, total):
+            if len(path) == k:
+                if total == n:
+                    res.append(path[:])
                 return
 
-            if total > target:
-                return
-
-            for i in range(start, len(candidates)):
-                path.append(candidates[i])
-                dfs(i, total + candidates[i], path)
+            for i in range(start, 10):
+                if total + i > n:
+                    break
+                path.append(i)
+                backtrack(i + 1, path, total + i)
                 path.pop()
 
-        dfs(0, 0, [])
-        return result
+        backtrack(1, [], 0)
+        return res
