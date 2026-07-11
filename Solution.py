@@ -15,9 +15,5 @@ class Solution:
                 path.append(i)
                 dfs(i+1, total + i)
                 path.pop()
-        
-        
-
-
-
 	return result
+    
