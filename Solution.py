@@ -16,6 +16,8 @@ class Solution:
                 dfs(i+1, total + i)
                 path.pop()
         
-        dfs(1,0)
-        return result 
+        
 
+
+
+	return result
