@@ -288,3 +288,10 @@ SELECT x , y , z ,
         ELSE 'No'
         END AS triangle
 FROM Triangle
+
+
+select id , num ,
+ LAG(num , 2) over (order by id desc) as two_rows_before
+ from numbers
+
+ 
