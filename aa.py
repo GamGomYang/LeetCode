@@ -1,15 +1,14 @@
-class Solution:
-    def findMaxAverage(self, nums: List[int], k: int) -> float:
+from collections import deque
 
-        num_sum = sum(nums[:k])
+def bfs(start):
 
-        max_sum = num_sum
+    queue = deque([start])
+    visited[start] = True
 
+    while queue:
+        current = queue.popleft()
 
-        for i in range(k, len(nums)):
-            num_sum += nums[i]
-            num_sum -= nums[i-k]
-
-            max_sum  = max(max_sum , num_sum)
-
-        return float(max_sum / k)
+        for next_node in graph[current]:
+            if not visited[next_node]:
+                visited[next_node] = True
+                queue.append(next_node)

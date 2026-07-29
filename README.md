@@ -16,18 +16,18 @@
     <td align="center">
       <img src="https://img.shields.io/badge/-Java-orange?logo=java"><br/>
       <img src="https://img.shields.io/badge/-Python-blue?logo=python"><br/>
-      <img src="https://img.shields.io/badge/-Kotlin-purple?logo=kotlin">
+      <img src="https://img.shields.io/badge/-Kotlin-purple?logo=kotlin"><br/>
+      <img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql">
     </td>
   </tr> 
 </table>
 
 <h1>문제 목록</h1>
 
-아래는 **Grind 75**에서 추천하는 총 169문제를 카테고리별로 정리한 표입니다.
+아래는 **Grind 75** 문제와 지금까지 풀이한 LeetCode 문제를 카테고리별로 정리한 표입니다.
 
-## Array (24 문제)
+## Array (33 문제)
 
-More actions
 | 번호 | 제목 | 언어 | 풀이 링크 | 난이도 |
 |---|---|---|---|---|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode1.java), [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode1.py) | Easy |
@@ -43,7 +43,7 @@ More actions
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | | | Medium |
 | 12 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) (LeetCode Premium) | | | Easy |
 | 13 | [Gas Station](https://leetcode.com/problems/gas-station/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode134.java) | Medium |
-| 14 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode128.java) | Medium |
+| 14 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode128.java), [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode128.py) | Medium |
 | 15 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode189.py) | Medium |
 | 16 | [Contiguous Array](https://leetcode.com/problems/contiguous-array/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode525.java), [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode525.py) | Medium |
 | 17 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode560.java), [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode560.py) | Medium |
@@ -53,11 +53,48 @@ More actions
 | 21 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | | | Hard |
 | 22 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode977.java) | Easy |
 | 23 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Two%20Pointer/leetcode16.java) | Medium |
-| 24 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | | | Medium |
+| 24 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | | | Medium |
+| 25 | [Plus One](https://leetcode.com/problems/plus-one/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode66.java) | Easy |
+| 26 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode209.py) | Medium |
+| 27 | [Array Partition](https://leetcode.com/problems/array-partition/) | ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode561.py) | Easy |
+| 28 | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode643.py) | Easy |
+| 29 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode724.java) | Easy |
+| 30 | [Minimum Changes To Make Alternating Binary String](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/) | ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode1758.py) | Easy |
+| 31 | [Maximize Area of Square Hole in Grid](https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/) | ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode2943.py) | Medium |
+| 32 | [Transformed Array](https://leetcode.com/problems/transformed-array/) | ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode3379.py) | Easy |
+| 33 | [Path Existence Queries in a Graph I](https://leetcode.com/problems/path-existence-queries-in-a-graph-i/) | ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode3532.py) | Medium |
 
 ---
 
-## String (14 문제)
+## Two Pointer (2 문제)
+
+<table>
+  <tr>
+    <th>번호</th>
+    <th>제목</th>
+    <th>언어</th>
+    <th>풀이 링크</th>
+    <th>난이도</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><a href="https://leetcode.com/problems/4sum/">4Sum</a></td>
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Two%20Pointer/leetcode18.java">Java</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/">Remove Duplicates from Sorted Array</a></td>
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Two%20Pointer/leetcode26.java">Java</a></td>
+    <td>Easy</td>
+  </tr>
+</table>
+
+---
+
+## String (26 문제)
 
 | 번호 | 제목                                                                                                                            | 언어                                                         | 풀이 링크                                                                        | 난이도 |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------- | ------ |
@@ -69,13 +106,24 @@ More actions
 | 6    | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                               | |                                                                                  | Medium |
 | 7    | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                                   | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode5.java), [Python](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode5.py) | Medium |
 | 8    | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)                                   | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode438.java) | Medium |
-| 9    | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                                                 | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode49.java)  | Medium |
+| 9 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode49.java), [Python](https://github.com/GamGomYang/LeetCode/blob/main/Array/leetcode49.py) | Medium |
 | 10   | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)               | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode424.java) | Medium |
 | 11   | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                                   | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode14.java)  | Easy   |
 | 12   | [Largest Number](https://leetcode.com/problems/largest-number/)                                                                 | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode179.java) | Medium |
 | 13   | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) (LintCode/LC Premium)                     | |                                                                                  | Medium |
 | 14   | [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)                                                             | |                                                                                  | Hard   |
-
+| 15 | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode6.java) | Medium |
+| 16 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode58.java) | Easy |
+| 17 | [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode168.java) | Easy |
+| 18 | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode171.java) | Easy |
+| 19 | [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode241.java) | Medium |
+| 20 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | ![Python](https://img.shields.io/badge/-Python-blue?logo=python) | [Python](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode290.py) | Easy |
+| 21 | [Reverse String](https://leetcode.com/problems/reverse-string/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode344.java) | Easy |
+| 22 | [Most Common Word](https://leetcode.com/problems/most-common-word/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode819.java) | Easy |
+| 23 | [Reorder Data in Log Files](https://leetcode.com/problems/reorder-data-in-log-files/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode937.java) | Medium |
+| 24 | [Truncate Sentence](https://leetcode.com/problems/truncate-sentence/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcode1816.java) | Easy |
+| 25 | [Number of Pairs of Strings With Concatenation Equal to Target](https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcod2023.java) | Medium |
+| 26 | [Find Palindrome With Fixed Length](https://leetcode.com/problems/find-palindrome-with-fixed-length/) | ![Java](https://img.shields.io/badge/-Java-orange?logo=java) | [Java](https://github.com/GamGomYang/LeetCode/blob/main/String/leetcod2217.java) | Medium |
 
 ---
 
@@ -128,7 +176,7 @@ More actions
 
 ---
 
-## Binary Search (8 문제)
+## Binary Search (10 문제)
 
 <table>
   <tr>
@@ -194,11 +242,25 @@ More actions
     <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinarySearch/leetcode153.py">Python</a></td>
     <td>Medium</td>
   </tr>
+  <tr>
+    <td>9</td>
+    <td><a href="https://leetcode.com/problems/search-insert-position/">Search Insert Position</a></td>
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinarySearch/leetcode35.java">Java</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><a href="https://leetcode.com/problems/sqrtx/">Sqrt(x)</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinarySearch/leetcode69.py">Python</a></td>
+    <td>Easy</td>
+  </tr>
 </table>
 
 ---
 
-## Graph (21 문제)
+## Graph (25 문제)
 
 <table>
   <tr>
@@ -355,6 +417,34 @@ More actions
     <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode787.py">Python</a></td>
     <td>Medium</td>
   </tr>
+  <tr>
+    <td>22</td>
+    <td><a href="https://leetcode.com/problems/number-of-provinces/">Number of Provinces</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode547.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td><a href="https://leetcode.com/problems/network-delay-time/">Network Delay Time</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode743.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td><a href="https://leetcode.com/problems/minimum-cost-to-convert-string-i/">Minimum Cost to Convert String I</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode2976.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td><a href="https://leetcode.com/problems/find-a-safe-walk-through-a-grid/">Find a Safe Walk Through a Grid</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Graph/leetcode3286.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
 </table>
 
 ---
@@ -408,7 +498,7 @@ More actions
 
 ---
 
-## Binary Tree (18 문제)
+## Binary Tree (19 문제)
 
 <table>
   <tr>
@@ -544,11 +634,18 @@ More actions
     <td></td>
     <td>Easy</td>
   </tr>
+  <tr>
+    <td>19</td>
+    <td><a href="https://leetcode.com/problems/longest-univalue-path/">Longest Univalue Path</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/BinaryTree/leetcode687.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
 </table>
 
 ---
 
-## Hash Table (3 문제)
+## Hash Table (8 문제)
 
 <table>
   <tr>
@@ -579,11 +676,46 @@ More actions
     <td></td>
     <td>Hard</td>
   </tr>
+  <tr>
+    <td>4</td>
+    <td><a href="https://leetcode.com/problems/isomorphic-strings/">Isomorphic Strings</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Hash/leetcode205.py">Python</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><a href="https://leetcode.com/problems/contains-duplicate-ii/">Contains Duplicate II</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Hash/leetcode219.py">Python</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><a href="https://leetcode.com/problems/top-k-frequent-elements/">Top K Frequent Elements</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Hash/leetcode347.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><a href="https://leetcode.com/problems/sort-characters-by-frequency/">Sort Characters By Frequency</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Hash/leetcode451.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><a href="https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/">Find Resultant Array After Removing Anagrams</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Hash/leetcode2273.py">Python</a></td>
+    <td>Easy</td>
+  </tr>
 </table>
 
 ---
 
-## Recursion (6 문제)
+## Recursion (11 문제)
 
 <table>
   <tr>
@@ -596,15 +728,15 @@ More actions
   <tr>
     <td>1</td>
     <td><a href="https://leetcode.com/problems/permutations/">Permutations</a></td>
-    <td></td>
-    <td></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Backtraking/leetcode46.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
     <td>2</td>
     <td><a href="https://leetcode.com/problems/subsets/">Subsets</a></td>
-    <td></td>
-    <td></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Backtraking/leetcod78.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -635,11 +767,46 @@ More actions
     <td></td>
     <td>Hard</td>
   </tr>
+  <tr>
+    <td>7</td>
+    <td><a href="https://leetcode.com/problems/restore-ip-addresses/">Restore IP Addresses</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Backtraking/leetcod93.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><a href="https://leetcode.com/problems/unique-binary-search-trees-ii/">Unique Binary Search Trees II</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Backtraking/leetcode95.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><a href="https://leetcode.com/problems/palindrome-partitioning/">Palindrome Partitioning</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Backtraking/leetcode131.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><a href="https://leetcode.com/problems/combination-sum-iii/">Combination Sum III</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Backtraking/leetcode216.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td><a href="https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/">Count Number of Maximum Bitwise-OR Subsets</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Backtraking/leetcode2044.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
 </table>
 
 ---
 
-## Linked List (14 문제)
+## Linked List (17 문제)
 
 <table>
   <tr>
@@ -747,11 +914,32 @@ More actions
     <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/LinkedList/leetcode25.py">Python</a></td>
     <td>Hard</td>
   </tr>
+  <tr>
+    <td>15</td>
+    <td><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list/">Remove Duplicates from Sorted List</a></td>
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/LinkedList/leetcode83.java">Java</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td><a href="https://leetcode.com/problems/reverse-linked-list-ii/">Reverse Linked List II</a></td>
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/LinkedList/leetcode92.java">Java</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td><a href="https://leetcode.com/problems/linked-list-cycle-ii/">Linked List Cycle II</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/LinkedList/leetcode142.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
 </table>
 
 ---
 
-## Stack (14 문제)
+## Stack (15 문제)
 
 <table>
   <tr>
@@ -859,6 +1047,13 @@ More actions
     <td></td>
     <td>Medium</td>
   </tr>
+  <tr>
+    <td>15</td>
+    <td><a href="https://leetcode.com/problems/pour-water/">Pour Water</a></td>
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Stack/leetcode755.java">Java</a></td>
+    <td>Medium</td>
+  </tr>
 </table>
 
 ---
@@ -911,8 +1106,8 @@ More actions
   <tr>
     <td>3</td>
     <td><a href="https://leetcode.com/problems/merge-k-sorted-lists/">Merge k Sorted Lists</a></td>
-    <td></td>
-    <td></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Heap/leetcode23.py">Python</a></td>
     <td>Hard</td>
   </tr>
   <tr>
@@ -932,8 +1127,8 @@ More actions
   <tr>
     <td>6</td>
     <td><a href="https://leetcode.com/problems/find-k-closest-elements/">Find K Closest Elements</a></td>
-    <td></td>
-    <td></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Heap/leetcode658.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -974,8 +1169,8 @@ More actions
   <tr>
     <td>2</td>
     <td><a href="https://leetcode.com/problems/word-break/">Word Break</a></td>
-    <td></td>
-    <td></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/DynamicProgramming/leetcode139.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -996,7 +1191,7 @@ More actions
 
 ---
 
-## Dynamic Programming (12 문제)
+## Dynamic Programming (17 문제)
 
 <table>
   <tr>
@@ -1009,8 +1204,8 @@ More actions
   <tr>
     <td>1</td>
     <td><a href="https://leetcode.com/problems/maximum-subarray/">Maximum Subarray</a></td>
-    <td></td>
-    <td></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/DynamicProgramming/leetcode53.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -1065,8 +1260,8 @@ More actions
   <tr>
     <td>9</td>
     <td><a href="https://leetcode.com/problems/jump-game/">Jump Game</a></td>
-    <td></td>
-    <td></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/DynamicProgramming/leetcode55.py">Python</a></td>
     <td>Medium</td>
   </tr>
   <tr>
@@ -1086,15 +1281,50 @@ More actions
   <tr>
     <td>12</td>
     <td><a href="https://leetcode.com/problems/combination-sum-iv/">Combination Sum IV</a></td>
-    <td></td>
-    <td></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Backtraking/leetcode377.py">Python</a></td>
     <td>Medium</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td><a href="https://leetcode.com/problems/regular-expression-matching/">Regular Expression Matching</a></td>
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/DynamicProgramming/leetcode10.java">Java</a></td>
+    <td>Hard</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td><a href="https://leetcode.com/problems/unique-paths-ii/">Unique Paths II</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/DynamicProgramming/leetcode63.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td><a href="https://leetcode.com/problems/minimum-path-sum/">Minimum Path Sum</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/DynamicProgramming/leetcode64.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td><a href="https://leetcode.com/problems/unique-binary-search-trees/">Unique Binary Search Trees</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/DynamicProgramming/leetcode96.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td><a href="https://leetcode.com/problems/pascals-triangle/">Pascal's Triangle</a></td>
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/DynamicProgramming/leetcode118.java">Java</a></td>
+    <td>Easy</td>
   </tr>
 </table>
 
 ---
 
-## Binary (7 문제)
+## Binary (9 문제)
 
 <table>
   <tr>
@@ -1153,11 +1383,25 @@ More actions
     <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Math/leetcode190.py">Python</a></td>
     <td>Easy</td>
   </tr>
+  <tr>
+    <td>8</td>
+    <td><a href="https://leetcode.com/problems/count-binary-substrings/">Count Binary Substrings</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Binary/leetcode696.py">Python</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><a href="https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/">Number of Steps to Reduce a Number in Binary Representation to One</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Binary/leetcode1404.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
 </table>
 
 ---
 
-## Math (5 문제)
+## Math (9 문제)
 
 <table>
   <tr>
@@ -1200,6 +1444,174 @@ More actions
     <td><a href="https://leetcode.com/problems/palindrome-number/">Palindrome Number</a></td>
     <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
     <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/String/Leetcode9.java">Java</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><a href="https://leetcode.com/problems/integer-to-roman/">Integer to Roman</a></td>
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Math/leetcode12.java">Java</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><a href="https://leetcode.com/problems/happy-number/">Happy Number</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Math/leetcode202.py">Python</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><a href="https://leetcode.com/problems/minimum-moves-to-capture-the-queen/">Minimum Moves to Capture The Queen</a></td>
+    <td><img src="https://img.shields.io/badge/-Java-orange?logo=java"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Math/leetcode3001.java">Java</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><a href="https://leetcode.com/problems/number-of-unique-xor-triplets-i/">Number of Unique XOR Triplets I</a></td>
+    <td><img src="https://img.shields.io/badge/-Python-blue?logo=python"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/Math/leetcode3513.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
+</table>
+
+---
+
+## SQL (18 문제)
+
+<table>
+  <tr>
+    <th>번호</th>
+    <th>제목</th>
+    <th>언어</th>
+    <th>풀이 링크</th>
+    <th>난이도</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><a href="https://leetcode.com/problems/combine-two-tables/">Combine Two Tables</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode175.sql">SQL</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><a href="https://leetcode.com/problems/second-highest-salary/">Second Highest Salary</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode176.sql">SQL</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><a href="https://leetcode.com/problems/nth-highest-salary/">Nth Highest Salary</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode177.sql">SQL</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><a href="https://leetcode.com/problems/rank-scores/">Rank Scores</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode178.sql">SQL</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><a href="https://leetcode.com/problems/consecutive-numbers/">Consecutive Numbers</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode180.sql">SQL</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><a href="https://leetcode.com/problems/department-highest-salary/">Department Highest Salary</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode184.sql">SQL</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><a href="https://leetcode.com/problems/game-play-analysis-i/">Game Play Analysis I</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode511.sql">SQL</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><a href="https://leetcode.com/problems/game-play-analysis-iv/">Game Play Analysis IV</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode550.sql">SQL</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><a href="https://leetcode.com/problems/managers-with-at-least-5-direct-reports/">Managers with at Least 5 Direct Reports</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode570.sql">SQL</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><a href="https://leetcode.com/problems/employee-bonus/">Employee Bonus</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode577.sql">SQL</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td><a href="https://leetcode.com/problems/find-customer-referee/">Find Customer Referee</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode584.sql">SQL</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td><a href="https://leetcode.com/problems/investments-in-2016/">Investments in 2016</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode585.sql">SQL</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td><a href="https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/">Customer Placing the Largest Number of Orders</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode586.sql">SQL</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td><a href="https://leetcode.com/problems/big-countries/">Big Countries</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetode595.sql">SQL</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td><a href="https://leetcode.com/problems/classes-with-at-least-5-students/">Classes With at Least 5 Students</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode596.sql">SQL</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td><a href="https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/">Friend Requests II: Who Has the Most Friends</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode602.sql">SQL</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td><a href="https://leetcode.com/problems/tree-node/">Tree Node</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode608.sql">SQL</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td><a href="https://leetcode.com/problems/triangle-judgement/">Triangle Judgement</a></td>
+    <td><img src="https://img.shields.io/badge/-SQL-lightgrey?logo=mysql"/></td>
+    <td><a href="https://github.com/GamGomYang/LeetCode/blob/main/SQL/leetcode610.sql">SQL</a></td>
     <td>Easy</td>
   </tr>
 </table>
