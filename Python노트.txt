@@ -1,0 +1,6 @@
+1. set 자료형은 객체이기 때문에 ()를 쓰지않는다
+    - if i not in set (O)
+
+2. bisect_right - 해당 수의 오른쪽 index를 반환
+    - [1,1,2,3]
+    - bisect_right(list,2) = 3

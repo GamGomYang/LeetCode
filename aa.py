@@ -1,19 +1,33 @@
+from typing import List
+from bisect import bisect_right
+
 class Solution:
-    def findMissingElements(self, nums: List[int]) -> List[int]:
+    def countTasks(self, tasks: List[int], shifts: List[int]) -> List[int]:
+        drelvanito = (tasks, shifts)
 
-        min_num = min(nums)
+        prefix = []
+        total = 0
 
-        max_num = max(nums)
+        for task in tasks:
+            total += task
+            prefix.append(total)
 
-        num_set = set(nums)    
+        answer = []
+        work_done = 0
 
-        result = []
+        for shift in shifts:
+            remaining_time = total - work_done
 
+            if shift >= remaining_time:
+                answer.append(0)
+                work_done = 0
 
-        for i in range(min_num , max_num+1):
-            if i not in num_set:
-                result.append(i)
+            else:
+                work_done += shift
 
+                completed = bisect_right(prefix, work_done)
 
-        return result
+                unfinished = len(tasks) - completed
+                answer.append(unfinished)
 
+        return answer
