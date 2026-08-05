@@ -4,3 +4,8 @@
 2. bisect_right - 해당 수의 오른쪽 index를 반환
     - [1,1,2,3]
     - bisect_right(list,2) = 3
+
+3. 함수안 전역변수일때는 self 써야한다.
+    - arr = self.arr 
+
+    

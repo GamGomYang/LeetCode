@@ -294,4 +294,9 @@ select id , num ,
  LAG(num , 2) over (order by id desc) as two_rows_before
  from numbers
 
+SELECT id , movie , description , rating
+FROM Cinema
+WHERE id %2 = 1 and description <> 'boring'
+ORDER BY rating DESC
+
  
