@@ -1,21 +1,35 @@
 class Solution:
-    def combinationSum3(self, k: int, n: int) -> List[List[int]]:
+    def myAtoi(self, s: str) -> int:
 
-        result = []
-        path = []
+        length  = len(s)
 
-        def dfs(start, total):
-            if total == n and len(path) == k:
-                result.append(path[:])
-                return
+        INT_MAX , INT_MIN = (2**31-1) , -2**31
+
+        sign = 1
+        result = 0
+
+        s= s.lstrip()
+
+        if s[0] in "+-":
+            if s[0] == '-':
+                sign = -1
+
+
+        index =1
+
+        while index < length and s[index].isdecimal():
+            result = result * 10 + int(s[index])
+
+            index +=1 
+
+        result *= sign
+
+        if result < INT_MIN:
+            return INT_MIN
+        elif result > INT_MAX:
+            return INT_MAX
+        else:
+            return result
+
         
-            for i in range(start, 10):
-                if total + i > n :
-                    break
-                path.append(i)
-                dfs(i+1, total + i)
-                path.pop()
-    	
-        dfs(1,0)
-        
-        return result
+
