@@ -303,4 +303,19 @@ SELECT Email
 FROM Person
 GROUP BY Email
 HAVING COUNT(Email) > 1 
- 
+
+SELECT actor_id , director_id 
+FROM ActorDirector
+GROUP BY actor_id , director_id 
+HAVING COUNT(*)>2
+
+SELECT p.product_name , s.year , s.price
+FROM Product p 
+JOIN Sales s
+ON p.product_id = s.product_id
+
+
+SELECT project_id , ROUND(AVG(experience_years),2) AS average_years
+FROM Project p  JOIN Employee e
+ON p.employee_id = e.employee_id
+GROUP BY project_id 
