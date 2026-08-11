@@ -1,20 +1,38 @@
 from typing import List
 
 class Solution:
-    def maxArea(self, height: List[int]) -> int:
-        left, right = 0, len(height) - 1
-        result = 0
+    def missingInteger(self, nums: List[int]) -> int:
+        
+        num_sum = 0
+        count =1 
+        max_num=0
+        first_num = nums[0]
+        max_number = max(nums)
 
-        while left < right:
-            h = min(height[left], height[right])
-            result = max(result, (right - left) * h)
+        if first_num +1 == nums[1]:
+            num_sum += first_num
+
+        for count in range(1, len(nums)):
+
+            while nums[count] == nums[count-1]+1:
+                num_sum += nums[count]
+                count += 1
+
+            max_num = max(max_num , num_sum)
+            num_sum =0
 
 
-            if height[left] < height[right]:
-                left += 1
-            else:
-                right -= 1
+        return max_num if max_num > max_number else max_number+1 
 
-        return result
 
-                
+if __name__ == "__main__":
+    solution = Solution()
+
+    input = [1,2,3,2,5]
+
+    result = solution.missingInteger(input)
+
+    print(result)
+                       
+
+            
