@@ -299,4 +299,8 @@ FROM Cinema
 WHERE id %2 = 1 and description <> 'boring'
 ORDER BY rating DESC
 
+SELECT Email 
+FROM Person
+GROUP BY Email
+HAVING COUNT(Email) > 1 
  
