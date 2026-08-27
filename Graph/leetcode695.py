@@ -2,7 +2,6 @@ from collections import deque
 
 class Solution:
     def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
-
         width = len(grid[0])
         height = len(grid)
         max_area = 0
