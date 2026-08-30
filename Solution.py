@@ -1,40 +1,19 @@
-      
+from typing import List
+from collections import defaultdict
+
 class Solution:
-    def shipWithinDays(self, weights: List[int], days: int) -> int:
-                         
-        def possible(w):
+    def numSubarraysWithSum(self, nums: List[int], goal: int) -> int:
 
-            total = 1
-            weight_sum =0
+        dict = defaultdict(int )
+        current_sum = 0
+        dict[0] = 1
+        count = 0
 
-            for weight in weights:
+        for num in nums:
+            current_sum += num
+            target = current_sum - goal 
+            count += dict[target]
+            dict[current_sum] += 1
 
-                if weight_sum + weight > w :
-                    total += 1
-                    weight_sum = 0
 
-                weight_sum += weight
-
-            return total <= days
-
-        left = max(weights)
-        right = sum(weights)
-        result_day = 0
-
-        while left <= right :
-            mid = (left + right )//2 
-
-            if possible(mid):
-                result_day = mid
-                right = mid-1
-            else:
-                left = mid+1
-
-        return result_day
-                
-
-            
-            
-
-            
-
+        return count

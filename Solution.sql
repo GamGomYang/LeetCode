@@ -341,6 +341,28 @@ JOIN (
 ON d.customer_id = f.customer_id 
 AND d.order_date = f.first_order_date
 
+
+select c.name as Customers
+from Customers c 
+where c.name not in (select customerId from
+Orders)
+
+select round(avg(
+  case 
+    when 
+      d.order_date = d.customer_pref_delivery_date
+      then 1
+      else 0
+      end
+)*100 , 2 ) as immediate_percentage
+from Delivery d join (select customer_id 
+, min(order_date) as first_order_date
+from Delivery
+group by customer_id) t on d.customer_id = t.customer_id 
+and d.order_date = t.first_order_date
+
+
+
  
 
 
